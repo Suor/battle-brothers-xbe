@@ -1,0 +1,80 @@
+local locations = ::HackflowsExp.Data.AttachedLocationDrafts <- {
+    amber_collector_location = ["pirate_background"]
+    beekeeper_location = []
+    blast_furnace_location = ["blacksmith_background"]
+    brewery_location = ["barkeep_background"]
+    dye_maker_location = ["cartographer_background" "painter_background" "painter_background"]
+    // dye_maker_oriental_location inherits from dye_maker_location
+    fishing_huts_location = []
+    fishing_huts_oriental_location = []
+    fletchers_hut_location = [
+        "arbalester_background" "atilliator_background" "atilliator_background"
+        "fletcher_background" "fletcher_background" "fletcher_background"
+    ]
+
+    fortified_outpost_location = [
+        "arbalester_background" "arbalester_background"
+        "bodyguard_background""skirmisher_background"
+    ]
+    gatherers_hut_location = []
+    gem_mine_location = ["con_artist_background"]
+    goat_herd_location = ["cook_background"]
+    goat_herd_oriental_location = []
+    gold_mine_location = []
+    guarded_checkpoint_location = [
+        "arbalester_background" "bodyguard_background" "skirmisher_background"
+        "town_watchman_background"
+    ]
+    harbor_location = [] // pirate ???
+    herbalists_grove_location = [
+        "gardener_background" "herbalist_background" "herbalist_background"
+        "herbalist_background" "leper_background"
+    ]
+    hunters_cabin_location = []
+    incense_dryer_location = []
+    leather_tanner_location = ["cobbler_background" "cobbler_background"]
+    militia_trainingcamp_location = []
+    militia_trainingcamp_oriental_location = []
+    lumber_camp_location = ["carpenter_background"]
+    mushroom_grove_location = ["gardener_background" "herbalist_background"]
+    orchard_location = ["cook_background"]
+    ore_smelters_location = ["blacksmith_background"]
+    peat_pit_location = ["roofer_background"]
+    pig_farm_location = ["cook_background"]
+    plantation_location = []
+    salt_min_location = []
+    silk_farm_location = []
+    stone_watchtower_location = ["arbalester_background"]
+    stone_watchtower_oriental_location = []
+    surface_copper_vein_location = []
+    surface_iron_vein_location = []
+    trapper_location = []
+    wheat_fields_location = ["cook_background"]
+    winery_location = []
+    wooden_watchtower_location = [
+        "skirmisher_background" "town_watchman_background" "town_watchman_background"
+    ]
+    wool_spinner_location = []
+    workshop_location = ["blacksmith_background" "carpenter_background"]
+}
+
+// We defined data on include so that any other mod might change/update this before we patch
+::mods_queue(::HackflowsExp.ID, "mod_hooks(>=20)", function() {
+    ::mods_hookDescendants("entity/world/attached_location", function (cls) {
+        cls.hackflows_isAttachedLocation <- true;
+    })
+    ::mods_addHook("inherit", function (baseScript, script, cls) {
+        if (!("hackflows_isAttachedLocation" in cls)) return;
+
+        local name = split(script, "/").top();
+        local backgrounds = name in locations ? locations[name] : [];
+        if (backgrounds.len() == 0) return;
+        this.logInfo("hx: hook location " + name + " dl=" + ("onUpdateDraftList" in cls));
+
+        local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
+        cls.onUpdateDraftList <- function (_list) {
+            if (original) original(_list);
+            if (this.isActive()) _list.extend(backgrounds)
+        }
+    })
+})
