@@ -231,7 +231,6 @@ this.treasure_hunters_scenario <- this.inherit("scripts/scenarios/world/starting
 			if (bro.getFlags().get("IsPlayerCharacter"))
 			{
 				treasure_hunters = ++treasure_hunters;
-				treasure_hunters = treasure_hunters;
 			}
 		}
 

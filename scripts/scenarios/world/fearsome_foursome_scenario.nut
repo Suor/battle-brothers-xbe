@@ -2,8 +2,8 @@ this.random_four_starters_low_variance_scenario <- this.inherit("scripts/scenari
 	m = {},
 	function create()
 	{
-		this.m.ID = "scenario.random_four_low_variance";
-		this.m.Name = "Fearsome Foursome (Low Var)";
+		this.m.ID = "scenario.fearsom_foursome";
+		this.m.Name = "Fearsome Foursome";
 		this.m.Description = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]This scenario is the same starting scenario as the other Fearsome Foursome start, except you will always get one higher tier background, one lower tier background, and two low-mid tier backgrounds.[/p]";
 		this.m.Difficulty = 2;
 		this.m.Order = 51;
