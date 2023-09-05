@@ -3,7 +3,7 @@ this.skirmisher_background <- this.inherit("scripts/skills/backgrounds/character
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.skirmisher";
+		this.m.ID = "background.hackflows_skirmisher";
 		this.m.Name = "Skirmisher";
 		this.m.Icon = "ui/backgrounds/background_skirmisher.png";
 		this.m.BackgroundDescription = "Skirmishers are light combatants that specialize in harassing larger groups of heavily armored soldiers. They can do a surprising amount of damage, but are unsuited to direct confrontation.";

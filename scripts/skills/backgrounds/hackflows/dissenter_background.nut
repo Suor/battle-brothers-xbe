@@ -3,7 +3,7 @@ this.dissenter_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.dissenter";
+		this.m.ID = "background.hackflows_dissenter";
 		this.m.Name = "Dissenter";
 		this.m.Icon = "ui/backgrounds/background_dissenter.png";
 		this.m.BackgroundDescription = "Dissenters have trouble keeping their mouths shut, seeking mercenary work as a means to escape a grisly end at the hands of goons hired by the targets of their denunciations.";

@@ -3,7 +3,7 @@ this.town_watchman_background <- this.inherit("scripts/skills/backgrounds/charac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.town_watchman";
+		this.m.ID = "background.hackflows_town_watchman";
 		this.m.Name = "Town Watchman";
 		this.m.Icon = "ui/backgrounds/background_town_watchman.png";
 		this.m.BackgroundDescription = "Town Watchmen are hired by burgomeisters to keep the peace and identify early threats to a town.";

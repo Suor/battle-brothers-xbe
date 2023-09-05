@@ -71,7 +71,7 @@ this.cobbler_creates_boots_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.cobbler" && b.getLevel() >= 7)
+			if (b.getBackground().getID() == "background.hackflows_cobbler" && b.getLevel() >= 7)
 			{
 				candidates_cobbler.push(b);
 			}

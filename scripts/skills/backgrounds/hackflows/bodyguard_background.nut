@@ -3,7 +3,7 @@ this.bodyguard_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.bodyguard";
+		this.m.ID = "background.hackflows_bodyguard";
 		this.m.Name = "Bodyguard";
 		this.m.Icon = "ui/backgrounds/background_bodyguard.png";
 		this.m.BackgroundDescription = "Bodyguards are burly men that specialize in keeping people of interest from being killed.";

@@ -3,7 +3,7 @@ this.lancer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.lancer";
+		this.m.ID = "background.hackflows_lancer";
 		this.m.Name = "Lancer";
 		this.m.Icon = "ui/backgrounds/background_lancer.png";
 		this.m.BackgroundDescription = "Lancers, true to their namesake, are extremely proficient with lances and polearms. Though they perfom well in jousting tournaments, in terms of general combat hardiness they fall short of true knights.";

@@ -175,7 +175,7 @@ this.cultist_requests_nose_removal_event <- this.inherit("scripts/events/event",
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.surgeon" && !bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
+			if (bro.getBackground().getID() == "background.hackflows_surgeon" && !bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
 			{
 				candidates_surgeon.push(bro);
 			}

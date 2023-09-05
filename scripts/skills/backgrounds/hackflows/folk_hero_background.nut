@@ -3,7 +3,7 @@ this.folk_hero_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.folk_hero";
+		this.m.ID = "background.hackflows_folk_hero";
 		this.m.Name = "Folk Hero";
 		this.m.Icon = "ui/backgrounds/background_folk_hero.png";
 		this.m.BackgroundDescription = "Folk heroes are commoners that have achieved great heights, earning the admiration of the peasantry and begrudging respect of knights with their mythical deeds.";

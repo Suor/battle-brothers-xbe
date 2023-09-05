@@ -70,7 +70,7 @@ this.carpenter_upgrades_cart_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.carpenter" && b.getLevel() >= 6)
+			if (b.getBackground().getID() == "background.hackflows_carpenter" && b.getLevel() >= 6)
 			{
 				candidates_carpenter.push(b);
 			}

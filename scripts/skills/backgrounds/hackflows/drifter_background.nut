@@ -3,7 +3,7 @@ this.drifter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.drifter";
+		this.m.ID = "background.hackflows_drifter";
 		this.m.Name = "Drifter";
 		this.m.Icon = "ui/backgrounds/background_drifter.png";
 		this.m.BackgroundDescription = "For one reason or another, drifters lack any city to call home, finding themselves wandering from place to place and doing odd jobs to keep themselves fed.";

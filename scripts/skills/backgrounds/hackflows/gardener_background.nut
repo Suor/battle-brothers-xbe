@@ -3,7 +3,7 @@ this.gardener_background <- this.inherit("scripts/skills/backgrounds/character_b
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.gardener";
+		this.m.ID = "background.hackflows_gardener";
 		this.m.Name = "Gardener";
 		this.m.Icon = "ui/backgrounds/background_gardener.png";
 		this.m.BackgroundDescription = "Gardeners are men with green thumbs often hired by noblemen to maintain extravant gardens as status symbols.";

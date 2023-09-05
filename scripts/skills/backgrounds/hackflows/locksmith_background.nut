@@ -3,7 +3,7 @@ this.locksmith_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.locksmith";
+		this.m.ID = "background.hackflows_locksmith";
 		this.m.Name = "Locksmith";
 		this.m.Icon = "ui/backgrounds/background_locksmith.png";
 		this.m.BackgroundDescription = "Locksmiths are men handy to have around when brute force isn\'t enough to crack open a door, catacomb, or treasure chest.";

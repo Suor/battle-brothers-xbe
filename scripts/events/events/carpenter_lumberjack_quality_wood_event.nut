@@ -92,7 +92,7 @@ this.carpenter_lumberjack_quality_wood_event <- this.inherit("scripts/events/eve
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.carpenter")
+			if (b.getBackground().getID() == "background.hackflows_carpenter")
 			{
 				candidates_carpenter.push(b);
 			}

@@ -85,7 +85,7 @@ this.herbalist_cures_asthma_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_asthmaticBro.push(b);
 			}
-			else if (b.getBackground().getID() == "background.herbalist" && b.getLevel() >= 4)
+			else if (b.getBackground().getID() == "background.hackflows_herbalist" && b.getLevel() >= 4)
 			{
 				candidates_herbalist.push(b);
 			}

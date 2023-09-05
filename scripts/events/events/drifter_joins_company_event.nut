@@ -40,7 +40,7 @@ this.drifter_joins_company_event <- this.inherit("scripts/events/event", {
 				local roster = this.World.getTemporaryRoster();
 				_event.m.NewDrifter = roster.create("scripts/entity/tactical/player");
 				_event.m.NewDrifter.setStartValuesEx([
-					"drifter_background"
+					"hackflows/drifter_background"
 				]);
 				_event.m.NewDrifter.getBackground().buildDescription(true);
 
@@ -83,7 +83,7 @@ this.drifter_joins_company_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.drifter")
+			if (bro.getBackground().getID() == "background.hackflows_drifter")
 			{
 				candidates.push(bro);
 			}

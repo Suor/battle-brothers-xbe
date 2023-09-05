@@ -3,7 +3,7 @@ this.cook_background <- this.inherit("scripts/skills/backgrounds/character_backg
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.cook";
+		this.m.ID = "background.hackflows_cook";
 		this.m.Name = "Cook";
 		this.m.Icon = "ui/backgrounds/background_cook.png";
 		this.m.BackgroundDescription = "Cooks have little combat or travel experience, having spent most of their careers indoors preparing delicious meals for the local nobility.";

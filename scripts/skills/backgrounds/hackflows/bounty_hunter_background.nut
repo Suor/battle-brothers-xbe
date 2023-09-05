@@ -3,7 +3,7 @@ this.bounty_hunter_background <- this.inherit("scripts/skills/backgrounds/charac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.bounty_hunter";
+		this.m.ID = "background.hackflows_bounty_hunter";
 		this.m.Name = "Bounty Hunter";
 		this.m.Icon = "ui/backgrounds/background_bounty_hunter.png";
 		this.m.BackgroundDescription = "Persistence is key. Bounty hunters are paid good coin to recover any human target, dead or alive.";

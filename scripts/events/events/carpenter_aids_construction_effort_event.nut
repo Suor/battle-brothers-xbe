@@ -120,7 +120,7 @@ this.carpenter_aids_construction_effort_event <- this.inherit("scripts/events/ev
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.carpenter")
+			if (b.getBackground().getID() == "background.hackflows_carpenter")
 			{
 				candidates_carpenter.push(b);
 			}

@@ -39,7 +39,7 @@ this.bounty_hunter_joins_company_event <- this.inherit("scripts/events/event", {
 				local roster = this.World.getTemporaryRoster();
 				_event.m.NewBountyHunter = roster.create("scripts/entity/tactical/player");
 				_event.m.NewBountyHunter.setStartValuesEx([
-					"bounty_hunter_background"
+					"hackflows/bounty_hunter_background"
 				]);
 				_event.m.NewBountyHunter.getBackground().buildDescription(true);
 				this.Characters.push(_event.m.NewBountyHunter.getImagePath());

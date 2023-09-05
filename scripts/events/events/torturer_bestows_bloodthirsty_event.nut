@@ -78,7 +78,7 @@ this.torturer_bestows_bloodthirsty_event <- this.inherit("scripts/events/event",
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.torturer" && b.getLevel() >= 3)
+			if (b.getBackground().getID() == "background.hackflows_torturer" && b.getLevel() >= 3)
 			{
 				candidates_torturer.push(b);
 			}

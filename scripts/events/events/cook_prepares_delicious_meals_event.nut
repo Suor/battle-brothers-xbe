@@ -69,7 +69,7 @@ this.cook_prepares_delicious_meals_event <- this.inherit("scripts/events/event",
 
 		foreach( b in brothers )
 		{
-			if (b.getBackground().getID() == "background.cook" && b.getLevel() >= 4)
+			if (b.getBackground().getID() == "background.hackflows_cook" && b.getLevel() >= 4)
 			{
 				candidates_cook.push(b);
 			}

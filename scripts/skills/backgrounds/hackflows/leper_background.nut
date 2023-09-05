@@ -3,7 +3,7 @@ this.leper_background <- this.inherit("scripts/skills/backgrounds/character_back
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.leper";
+		this.m.ID = "background.hackflows_leper";
 		this.m.Name = "Leper";
 		this.m.Icon = "ui/backgrounds/background_leper.png";
 		this.m.BackgroundDescription = "Lepers are shunned from society for their ghastly appearance, but also benefit from a general lack of sensation.";

@@ -3,7 +3,7 @@ this.outlander_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.outlander";
+		this.m.ID = "background.hackflows_outlander";
 		this.m.Name = "Outlander";
 		this.m.Icon = "ui/backgrounds/background_outlander.png";
 		this.m.BackgroundDescription = "Outlanders come from faraway lands that take months or even years to reach by ship. They are hard to read at the best of times, but especially so in combat.";

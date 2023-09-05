@@ -115,7 +115,7 @@ this.atilliator_crafts_masterwork_crossbow_event <- this.inherit("scripts/events
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 8 && bro.getBackground().getID() == "background.atilliator")
+			if (bro.getLevel() >= 8 && bro.getBackground().getID() == "background.hackflows_atilliator")
 			{
 				candidates.push(bro);
 			}

@@ -108,7 +108,7 @@ this.torturer_removes_fainthearted_event <- this.inherit("scripts/events/event",
 			{
 				candidates_faintheartedbro.push(b);
 			}
-			else if (b.getBackground().getID() == "background.torturer" && b.getLevel() >= 3)
+			else if (b.getBackground().getID() == "background.hackflows_torturer" && b.getLevel() >= 3)
 			{
 				candidates_torturer.push(b);
 			}

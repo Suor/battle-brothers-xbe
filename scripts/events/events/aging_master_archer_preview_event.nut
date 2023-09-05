@@ -50,7 +50,11 @@ this.aging_master_archer_preview_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 6 && bro.getBackground().getID() == "background.master_archer" && !bro.getFlags().has("aging_preview") && !bro.getSkills().hasSkill("trait.old") && !bro.getFlags().has("IsRejuvinated"))
+			if (bro.getLevel() >= 6
+				&& bro.getBackground().getID() == "background.hackflows_master_archer"
+				&& !bro.getFlags().has("aging_preview")
+				&& !bro.getSkills().hasSkill("trait.old")
+				&& !bro.getFlags().has("IsRejuvinated"))
 			{
 				candidates.push(bro);
 			}

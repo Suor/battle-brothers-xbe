@@ -5,7 +5,7 @@ this.berserker_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.berserker";
+		this.m.ID = "background.hackflows_berserker";
 		this.m.Name = "Berserker";
 		this.m.Icon = "ui/backgrounds/background_berserker.png";
 		this.m.BackgroundDescription = "Kill or be killed. Berserkers are men who have been forged by cruel hardship since birth, and as a result are naturally fearless combatants.";

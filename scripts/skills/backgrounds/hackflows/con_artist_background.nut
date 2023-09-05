@@ -3,7 +3,7 @@ this.con_artist_background <- this.inherit("scripts/skills/backgrounds/character
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.con_artist";
+		this.m.ID = "background.hackflows_con_artist";
 		this.m.Name = "Con Artist";
 		this.m.Icon = "ui/backgrounds/background_con_artist.png";
 		this.m.BackgroundDescription = "Con artists make their living by swindling other folks. Those astute enough to realize when they are pressing their luck often turn to mercenary work to begin anew.";

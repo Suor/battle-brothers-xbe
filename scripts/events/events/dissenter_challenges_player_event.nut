@@ -179,7 +179,7 @@ this.dissenter_challenges_player_event <- this.inherit("scripts/events/event", {
 				grumpy = ++grumpy;
 				grumpy = grumpy;
 
-				if (bro.getBackground().getID() == "background.dissenter")
+				if (bro.getBackground().getID() == "background.hackflows_dissenter")
 				{
 					candidates.push(bro);
 				}

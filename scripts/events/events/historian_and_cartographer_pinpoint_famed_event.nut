@@ -171,7 +171,7 @@ this.historian_and_cartographer_pinpoint_famed_event <- this.inherit("scripts/ev
 				scoreMultiplier = scoreMultiplier + b.getLevel();
 				candidates_historian.push(b);
 			}
-			else if (b.getBackground().getID() == "background.cartographer")
+			else if (b.getBackground().getID() == "background.hackflows_cartographer")
 			{
 				scoreMultiplier = scoreMultiplier + b.getLevel();
 				candidates_cartographer.push(b);

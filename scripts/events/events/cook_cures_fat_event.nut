@@ -85,7 +85,7 @@ this.cook_cures_fat_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_fatBro.push(b);
 			}
-			else if (b.getBackground().getID() == "background.cook" && b.getLevel() >= 2)
+			else if (b.getBackground().getID() == "background.hackflows_cook" && b.getLevel() >= 2)
 			{
 				candidates_cook.push(b);
 			}

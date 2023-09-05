@@ -74,7 +74,7 @@ this.release_falcon_skill <- this.inherit("scripts/skills/skill", {
 	{
 		this.m.Item.setReleased(true);
 
-		if (this.getContainer().hasSkill("background.falconer"))
+		if (this.getContainer().hasSkill("background.hackflows_falconer"))
 		{
 			this.Tactical.queryTilesInRange(_user.getTile(), 1, 16, false, [], this.onQueryTile, _user.getFaction());
 			_user.setActionPoints(_user.getActionPoints() + this.m.ActionPointCost);

@@ -63,12 +63,12 @@ this.painter_and_herbalist_make_dyes_event <- this.inherit("scripts/events/event
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.painter")
+			if (b.getBackground().getID() == "background.hackflows_painter")
 			{
 				candidates_painter.push(b);
 			}
 
-			if (b.getBackground().getID() == "background.herbalist")
+			if (b.getBackground().getID() == "background.hackflows_herbalist")
 			{
 				candidates_herbalist.push(b);
 			}

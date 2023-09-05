@@ -105,7 +105,7 @@ this.painter_paints_masterpiece_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 11 && bro.getBackground().getID() == "background.painter")
+			if (bro.getLevel() >= 11 && bro.getBackground().getID() == "background.hackflows_painter")
 			{
 				candidates.push(bro);
 			}

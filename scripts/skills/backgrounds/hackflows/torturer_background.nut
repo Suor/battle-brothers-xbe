@@ -3,7 +3,7 @@ this.torturer_background <- this.inherit("scripts/skills/backgrounds/character_b
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.torturer";
+		this.m.ID = "background.hackflows_torturer";
 		this.m.Name = "Torturer";
 		this.m.Icon = "ui/backgrounds/background_torturer.png";
 		this.m.BackgroundDescription = "All noblemen employ torturers, though few would admit it openly. Torturers\' personalities vary wildly from cruel detachment to psychotic malice. Nevertheless, they are all brutally efficient at inflcting pain and permanent damage.";

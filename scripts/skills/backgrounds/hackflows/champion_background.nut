@@ -3,7 +3,7 @@ this.champion_background <- this.inherit("scripts/skills/backgrounds/character_b
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.champion";
+		this.m.ID = "background.hackflows_champion";
 		this.m.Name = "Champion";
 		this.m.Icon = "ui/backgrounds/background_champion.png";
 		this.m.BackgroundDescription = "Champions are knights that have gained renown as one on one fighters. Men of such repute are usually in the employ of noble houses and as such not typically in the market for mercenary work.";

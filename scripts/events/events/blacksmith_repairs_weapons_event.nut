@@ -76,7 +76,7 @@ this.blacksmith_repairs_weapons_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.blacksmith")
+			if (b.getBackground().getID() == "background.hackflows_blacksmith")
 			{
 				candidates_blacksmith.push(b);
 			}

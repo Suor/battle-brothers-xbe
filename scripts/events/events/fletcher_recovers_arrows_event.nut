@@ -28,7 +28,7 @@ this.fletcher_recovers_arrows_event <- this.inherit("scripts/events/event", {
 				this.Characters.push(_event.m.Fletcher.getImagePath());
 				local amount = this.Math.rand(10, 20);
 
-				if (_event.m.Fletcher.getBackground().getID() == "background.fletcher")
+				if (_event.m.Fletcher.getBackground().getID() == "background.hackflows_fletcher")
 				{
 					amount = amount + 15;
 				}
@@ -72,7 +72,7 @@ this.fletcher_recovers_arrows_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.fletcher" || b.getBackground().getID() == "background.bowyer" || b.getBackground().getID() == "background.atilliator")
+			if (b.getBackground().getID() == "background.hackflows_fletcher" || b.getBackground().getID() == "background.bowyer" || b.getBackground().getID() == "background.hackflows_atilliator")
 			{
 				candidates_fletcher.push(b);
 			}

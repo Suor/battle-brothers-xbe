@@ -3,7 +3,7 @@ this.roofer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.roofer";
+		this.m.ID = "background.hackflows_roofer";
 		this.m.Name = "Roofer";
 		this.m.Icon = "ui/backgrounds/background_roofer.png";
 		this.m.BackgroundDescription = "Due to the time spent atop ladders and in high places for their profession, roofers are sure-footed and have no issue maintaining their balance.";

@@ -3,7 +3,7 @@ this.cartographer_background <- this.inherit("scripts/skills/backgrounds/charact
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.cartographer";
+		this.m.ID = "background.hackflows_cartographer";
 		this.m.Name = "Cartographer";
 		this.m.Icon = "ui/backgrounds/background_cartographer.png";
 		this.m.BackgroundDescription = "Cartographers specialize in the creation of accurate maps. Unlike historians, they have modest experience outdoors from their time spent travelling with supply caravans to map the landscape.";

@@ -5,7 +5,7 @@ this.druid_background <- this.inherit("scripts/skills/backgrounds/character_back
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.druid";
+		this.m.ID = "background.hackflows_druid";
 		this.m.Name = "Druid";
 		this.m.Icon = "ui/backgrounds/background_druid.png";
 		this.m.BackgroundDescription = "Druids are men that are more in tune with mystic forces than the average layman.";

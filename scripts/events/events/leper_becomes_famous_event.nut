@@ -108,7 +108,7 @@ this.leper_becomes_famous_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 11 && bro.getBackground().getID() == "background.leper")
+			if (bro.getLevel() >= 11 && bro.getBackground().getID() == "background.hackflows_leper")
 			{
 				candidates.push(bro);
 			}

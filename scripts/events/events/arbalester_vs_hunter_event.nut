@@ -208,7 +208,7 @@ this.arbalester_vs_hunter_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.arbalester")
+			if (b.getBackground().getID() == "background.hackflows_arbalester")
 			{
 				candidates_arbalester.push(b);
 			}

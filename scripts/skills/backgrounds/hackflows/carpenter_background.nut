@@ -3,7 +3,7 @@ this.carpenter_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.carpenter";
+		this.m.ID = "background.hackflows_carpenter";
 		this.m.Name = "Carpenter";
 		this.m.Icon = "ui/backgrounds/background_carpenter.png";
 		this.m.BackgroundDescription = "Carpenters can often be found in forest settlements, doing the critical work of converting logs to high quality planks.";

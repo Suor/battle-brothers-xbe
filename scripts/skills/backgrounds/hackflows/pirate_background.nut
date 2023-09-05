@@ -3,7 +3,7 @@ this.pirate_background <- this.inherit("scripts/skills/backgrounds/character_bac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.pirate";
+		this.m.ID = "background.hackflows_pirate";
 		this.m.Name = "Pirate";
 		this.m.Icon = "ui/backgrounds/background_pirate.png";
 		this.m.BackgroundDescription = "Though sailing skills aren\'t applicable on dry land, fighting skills are. Pirates are used to the savagery of combat.";

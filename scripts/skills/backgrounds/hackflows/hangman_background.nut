@@ -3,7 +3,7 @@ this.hangman_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.hangman";
+		this.m.ID = "background.hackflows_hangman";
 		this.m.Name = "Hangman";
 		this.m.Icon = "ui/backgrounds/background_hangman.png";
 		this.m.BackgroundDescription = "Hangmen are no strangers to death, but also have not seen it dealt in the myriad of sloppy methods out on the battlefield.";

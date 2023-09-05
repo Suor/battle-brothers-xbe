@@ -3,7 +3,7 @@ this.barkeep_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.barkeep";
+		this.m.ID = "background.hackflows_barkeep";
 		this.m.Name = "Barkeep";
 		this.m.Icon = "ui/backgrounds/background_barkeep.png";
 		this.m.BackgroundDescription = "Barkeeps have some brawling experience from breaking up fights at the taverns they work in.";

@@ -64,11 +64,11 @@ this.surgeon_cures_temporary_injury_event <- this.inherit("scripts/events/event"
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() != "background.slave" && bro.getBackground().getID() != "background.surgeon" && bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
+			if (bro.getBackground().getID() != "background.slave" && bro.getBackground().getID() != "background.hackflows_surgeon" && bro.getSkills().hasSkillOfType(this.Const.SkillType.TemporaryInjury))
 			{
 				candidates_injured.push(bro);
 			}
-			else if (bro.getBackground().getID() == "background.surgeon")
+			else if (bro.getBackground().getID() == "background.hackflows_surgeon")
 			{
 				candidates_surgeon.push(bro);
 			}

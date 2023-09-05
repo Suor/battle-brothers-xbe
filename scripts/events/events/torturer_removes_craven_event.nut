@@ -108,7 +108,7 @@ this.torturer_removes_craven_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_cravenbro.push(b);
 			}
-			else if (b.getBackground().getID() == "background.torturer" && b.getLevel() >= 5)
+			else if (b.getBackground().getID() == "background.hackflows_torturer" && b.getLevel() >= 5)
 			{
 				candidates_torturer.push(b);
 			}

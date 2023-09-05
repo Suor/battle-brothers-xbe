@@ -257,7 +257,7 @@ this.cartographer_discovers_location_event <- this.inherit("scripts/events/event
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.cartographer")
+			if (bro.getBackground().getID() == "background.hackflows_cartographer")
 			{
 				candidates.push(bro);
 			}

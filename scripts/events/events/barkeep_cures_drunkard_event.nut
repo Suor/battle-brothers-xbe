@@ -85,7 +85,7 @@ this.barkeep_cures_drunkard_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_drunkard.push(b);
 			}
-			else if (b.getBackground().getID() == "background.barkeep" && b.getLevel() >= 2)
+			else if (b.getBackground().getID() == "background.hackflows_barkeep" && b.getLevel() >= 2)
 			{
 				candidates_barkeep.push(b);
 			}

@@ -3,7 +3,7 @@ this.blacksmith_background <- this.inherit("scripts/skills/backgrounds/character
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.blacksmith";
+		this.m.ID = "background.hackflows_blacksmith";
 		this.m.Name = "Blacksmith";
 		this.m.Icon = "ui/backgrounds/background_blacksmith.png";
 		this.m.BackgroundDescription = "The endurance and precision needed to forge weapons of war gives blacksmiths a head start in becoming combat ready.";

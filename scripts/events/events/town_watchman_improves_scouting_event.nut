@@ -80,7 +80,7 @@ this.town_watchman_improves_scouting_event <- this.inherit("scripts/events/event
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.town_watchman" && b.getLevel() >= 10)
+			if (b.getBackground().getID() == "background.hackflows_town_watchman" && b.getLevel() >= 10)
 			{
 				candidates_town_watchman.push(b);
 			}

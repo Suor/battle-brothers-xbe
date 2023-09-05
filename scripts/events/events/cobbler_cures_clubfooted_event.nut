@@ -85,7 +85,7 @@ this.cobbler_cures_clubfooted_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_clubfootedBro.push(b);
 			}
-			else if (b.getBackground().getID() == "background.cobbler" && b.getLevel() >= 2)
+			else if (b.getBackground().getID() == "background.hackflows_cobbler" && b.getLevel() >= 2)
 			{
 				candidates_cobbler.push(b);
 			}

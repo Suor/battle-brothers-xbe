@@ -71,7 +71,7 @@ this.cook_vs_ratcatcher_event <- this.inherit("scripts/events/event", {
 			{
 				candidates_ratcatcher.push(b);
 			}
-			else if (b.getBackground().getID() == "background.cook")
+			else if (b.getBackground().getID() == "background.hackflows_cook")
 			{
 				candidates_cook.push(b);
 			}

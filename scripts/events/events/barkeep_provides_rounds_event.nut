@@ -118,7 +118,7 @@ this.barkeep_provides_rounds_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.barkeep")
+			if (bro.getBackground().getID() == "background.hackflows_barkeep")
 			{
 				candidates.push(bro);
 			}

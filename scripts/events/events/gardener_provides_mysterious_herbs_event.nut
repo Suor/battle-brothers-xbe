@@ -62,7 +62,7 @@ this.gardener_provides_mysterious_herbs_event <- this.inherit("scripts/events/ev
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.gardener")
+			if (bro.getBackground().getID() == "background.hackflows_gardener")
 			{
 				candidates.push(bro);
 			}

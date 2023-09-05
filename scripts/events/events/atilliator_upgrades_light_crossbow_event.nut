@@ -61,7 +61,7 @@ this.atilliator_upgrades_light_crossbow_event <- this.inherit("scripts/events/ev
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.atilliator")
+			if (bro.getBackground().getID() == "background.hackflows_atilliator")
 			{
 				candidates.push(bro);
 			}

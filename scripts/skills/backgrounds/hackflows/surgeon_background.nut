@@ -3,7 +3,7 @@ this.surgeon_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.surgeon";
+		this.m.ID = "background.hackflows_surgeon";
 		this.m.Name = "Surgeon";
 		this.m.Icon = "ui/backgrounds/background_surgeon.png";
 		this.m.BackgroundDescription = "Capable surgeons are a rare find, and often have their hands full with patching up wounded soldiers and villagers alike. They are used to the sight of blood and have operated in high stress situations, but are below average combatants.";

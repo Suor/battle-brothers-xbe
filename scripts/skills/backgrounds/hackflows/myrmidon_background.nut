@@ -3,7 +3,7 @@ this.myrmidon_background <- this.inherit("scripts/skills/backgrounds/character_b
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.myrmidon";
+		this.m.ID = "background.hackflows_myrmidon";
 		this.m.Name = "Myrmidon";
 		this.m.Icon = "ui/backgrounds/background_myrmidon.png";
 		this.m.BackgroundDescription = "Not quite strong enough to be raiders, not quite sneaky enough to be thieves, myrmidons nevertheless make up for their lack of standout talents with their eagerness to commit unscrupulous acts.";

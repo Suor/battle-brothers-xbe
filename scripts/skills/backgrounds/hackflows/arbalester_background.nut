@@ -3,7 +3,7 @@ this.arbalester_background <- this.inherit("scripts/skills/backgrounds/character
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.arbalester";
+		this.m.ID = "background.hackflows_arbalester";
 		this.m.Name = "Arbalester";
 		this.m.Icon = "ui/backgrounds/background_arbalester.png";
 		this.m.BackgroundDescription = "Arbalesters have served as professional crossbowmen at some point in their lives.";

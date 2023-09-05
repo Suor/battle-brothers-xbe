@@ -81,7 +81,7 @@ this.skirmisher_trains_stealth_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.skirmisher")
+			if (b.getBackground().getID() == "background.hackflows_skirmisher")
 			{
 				candidates_skirmisher.push(b);
 			}

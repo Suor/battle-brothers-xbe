@@ -115,7 +115,7 @@ this.roofer_aids_construction_effort_event <- this.inherit("scripts/events/event
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.roofer")
+			if (b.getBackground().getID() == "background.hackflows_roofer")
 			{
 				candidates_roofer.push(b);
 			}

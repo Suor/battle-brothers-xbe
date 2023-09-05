@@ -61,7 +61,7 @@ this.fletcher_upgrades_large_quiver_of_bolts_event <- this.inherit("scripts/even
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 4 && bro.getBackground().getID() == "background.fletcher")
+			if (bro.getLevel() >= 4 && bro.getBackground().getID() == "background.hackflows_fletcher")
 			{
 				candidates.push(bro);
 			}

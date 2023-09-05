@@ -162,7 +162,7 @@ this.locksmith_unlocks_vault_event <- this.inherit("scripts/events/event", {
 				continue;
 			}
 
-			if (b.getBackground().getID() == "background.locksmith")
+			if (b.getBackground().getID() == "background.hackflows_locksmith")
 			{
 				candidates_locksmith.push(b);
 			}

@@ -3,7 +3,7 @@ this.master_archer_background <- this.inherit("scripts/skills/backgrounds/charac
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.master_archer";
+		this.m.ID = "background.hackflows_master_archer";
 		this.m.Name = "Master Archer";
 		this.m.Icon = "ui/backgrounds/background_master_archer.png";
 		this.m.BackgroundDescription = "Master archers have spent their lives honing their abilities. Though they are extremely talented marksmen, they are incompetent melee fighters.";

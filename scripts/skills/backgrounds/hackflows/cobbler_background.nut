@@ -3,7 +3,7 @@ this.cobbler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.cobbler";
+		this.m.ID = "background.hackflows_cobbler";
 		this.m.Name = "Cobbler";
 		this.m.Icon = "ui/backgrounds/background_cobbler.png";
 		this.m.BackgroundDescription = "Cobblers are humble folk making a living by crafting footwear of all kinds.";

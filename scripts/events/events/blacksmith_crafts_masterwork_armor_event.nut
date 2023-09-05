@@ -138,7 +138,8 @@ this.blacksmith_crafts_masterwork_armor_event <- this.inherit("scripts/events/ev
 
 		foreach( bro in brothers )
 		{
-			if (bro.getLevel() >= 8 && bro.getBackground().getID() == "background.blacksmith")
+			if (bro.getLevel() >= 8
+				&& bro.getBackground().getID() == "background.hackflows_blacksmith")
 			{
 				candidates.push(bro);
 			}

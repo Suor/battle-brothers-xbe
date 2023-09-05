@@ -42,7 +42,7 @@ this.treasure_hunters_scenario <- this.inherit("scripts/scenarios/world/starting
 		local cartographer;
 		cartographer = roster.create("scripts/entity/tactical/player");
 		cartographer.setStartValuesEx([
-			"cartographer_background"
+			"hackflows/cartographer_background"
 		]);
 		cartographer.getSkills().removeByID("trait.survivor");
 		cartographer.getSkills().removeByID("trait.greedy");
@@ -63,7 +63,7 @@ this.treasure_hunters_scenario <- this.inherit("scripts/scenarios/world/starting
 		local falconer;
 		falconer = roster.create("scripts/entity/tactical/player");
 		falconer.setStartValuesEx([
-			"falconer_background"
+			"hackflows/falconer_background"
 		]);
 		falconer.getSkills().removeByID("trait.survivor");
 		falconer.getSkills().removeByID("trait.greedy");

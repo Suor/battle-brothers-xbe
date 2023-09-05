@@ -3,7 +3,7 @@ this.painter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.painter";
+		this.m.ID = "background.hackflows_painter";
 		this.m.Name = "Painter";
 		this.m.Icon = "ui/backgrounds/background_painter.png";
 		this.m.BackgroundDescription = "Unsuited to the hardships of both combat and reality as a whole, painters nevertheless create beautiful artwork capable of briefly staving off the bleakness of life.";

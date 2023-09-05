@@ -47,7 +47,7 @@ this.leper_gets_sick_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.leper")
+			if (bro.getBackground().getID() == "background.hackflows_leper")
 			{
 				candidates.push(bro);
 			}

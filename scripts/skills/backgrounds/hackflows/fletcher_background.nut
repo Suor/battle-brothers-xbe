@@ -3,7 +3,7 @@ this.fletcher_background <- this.inherit("scripts/skills/backgrounds/character_b
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.fletcher";
+		this.m.ID = "background.hackflows_fletcher";
 		this.m.Name = "Fletcher";
 		this.m.Icon = "ui/backgrounds/background_fletcher.png";
 		this.m.BackgroundDescription = "Fletchers are the counterpart of bowyers, specializing in making and selling arrows.";

@@ -3,7 +3,7 @@ this.herbalist_background <- this.inherit("scripts/skills/backgrounds/character_
 	function create()
 	{
 		this.character_background.create();
-		this.m.ID = "background.herbalist";
+		this.m.ID = "background.hackflows_herbalist";
 		this.m.Name = "Herbalist";
 		this.m.Icon = "ui/backgrounds/background_herbalist.png";
 		this.m.BackgroundDescription = "Herbalists are capable of recognizing the medicinal properties of a plethora of plant life. They produce salves and creams that relieve pain and discomfort.";

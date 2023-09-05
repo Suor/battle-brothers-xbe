@@ -117,7 +117,7 @@ this.lancer_gae_buidhe_event <- this.inherit("scripts/events/event", {
 
 		foreach( bro in brothers )
 		{
-			if (bro.getBackground().getID() == "background.lancer" && bro.getLevel() >= 10)
+			if (bro.getBackground().getID() == "background.hackflows_lancer" && bro.getLevel() >= 10)
 			{
 				candidates.push(bro);
 			}
