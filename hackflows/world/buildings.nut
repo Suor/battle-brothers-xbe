@@ -18,10 +18,16 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
         "hackflows/lancer_background"
         "hackflows/lancer_background"
     ]
-    armorsmith_building = ["hackflows/blacksmith_background" "hackflows/blacksmith_background"]
+    armorsmith_building = [
+        "hackflows/blacksmith_background"
+        "hackflows/blacksmith_background"
+    ]
     // armorsmith_oriental_building inherits from armorsmith_building
     barber_building = []
-    fletcher_building = ["hackflows/atilliator_background", "hackflows/fletcher_background"]
+    fletcher_building = [
+        "hackflows/atilliator_background"
+        "hackflows/fletcher_background"
+    ]
     kennel_building = []
     marketplace_building = []
     // marketplace_oriental_building inherits from marketplace_building
@@ -40,7 +46,10 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
     ]
     taxidermist_building = []
     // taxidermist_oriental_building inherits from taxidermist_building
-    temple_building = ["hackflows/herbalist_background" "hackflows/leper_background"]
+    temple_building = [
+        "hackflows/herbalist_background"
+        "hackflows/leper_background"
+    ]
     // temple_oriental_building inherits from temple_building
     training_hall_building = [
         "hackflows/bounty_hunter_background"
