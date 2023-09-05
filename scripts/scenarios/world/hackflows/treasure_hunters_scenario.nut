@@ -2,7 +2,7 @@ this.treasure_hunters_scenario <- this.inherit("scripts/scenarios/world/starting
 	m = {},
 	function create()
 	{
-		this.m.ID = "scenario.treasure_hunters";
+		this.m.ID = "scenario.hackflows_treasure_hunters";
 		this.m.Name = "Treasure Hunters";
 		this.m.Description = "[p=c][img]gfx/ui/events/event_04.png[/img][/p][p]You\'ve been hunting for treasure for years. The original squad having split for various reasons, you and a few others decide to seek fame and glory in addition to treasure.\n\n[color=#bcad8c]Treasure Hunters:[/color] Start with a Historian, a Cartographer, and a Falconer.\n[color=#bcad8c]Fabled Three:[/color] You can never have more than 12 men in your roster, and if all of your three starting men should die, your campaign ends.\n[color=#bcad8c]Our Fair Share:[/color] Begin with a famed weapon and some treasure as booty from past adventures.[/p]";
 		this.m.Difficulty = 3;

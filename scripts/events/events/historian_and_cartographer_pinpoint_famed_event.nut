@@ -187,7 +187,7 @@ this.historian_and_cartographer_pinpoint_famed_event <- this.inherit("scripts/ev
 		this.m.Historian = candidates_historian[this.Math.rand(0, candidates_historian.len() - 1)];
 		this.m.Score = 20 * scoreMultiplier * (candidates_cartographer.len() + candidates_historian.len());
 
-		if (this.World.Assets.getOrigin().getID() == "scenario.treasure_hunters")
+		if (this.World.Assets.getOrigin().getID() == "scenario.hackflows_treasure_hunters")
 		{
 			this.m.Score *= 2;
 		}
