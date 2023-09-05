@@ -3,13 +3,13 @@ if (!::mods_getRegisteredMod("mod_background_perks")) return;
 local chances = {
     arbalester = {
         "mastery.crossbow": 50
-        "bullseye": 10
+        "bullseye": 20
         "coup_de_grace": 20
     }
 
     atilliator = {
         "mastery.crossbow": 20
-        "bullseye": 5
+        "bullseye": 8
     }
 
     barkeep = {
@@ -119,8 +119,8 @@ local chances = {
     folk_hero = {
         "colossus": 30
         "brawny": 30
-        "gifted": 30
-        "underdog": 5
+        "gifted": 15
+        "underdog": 10
     }
 
     gardener = {
@@ -132,11 +132,13 @@ local chances = {
         "hold_out": 20
         "steel_brow": 20
         "coup_de_grace": 30
+        "nine_lives": 20
     }
 
     herbalist = {
         "bags_and_belts": 50
         "student": 25
+        "pathfinder": 15
     }
 
     lancer = {
@@ -146,8 +148,10 @@ local chances = {
         "footwork": 100
     }
 
+    // This one is intentionally useless
     leper = {
         "colossus": 5
+        "nine_lives": 5
     }
 
     locksmith = {
@@ -216,6 +220,7 @@ local chances = {
         "rotation": 50
     }
 }
+
 
 foreach (key, value in chances) {
     ::BgPerks.chances["hackflows_" + key] <- value;

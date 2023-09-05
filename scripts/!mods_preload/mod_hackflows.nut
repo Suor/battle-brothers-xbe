@@ -9,7 +9,7 @@ local hx = ::HackflowsExp <- {
 foreach (file in ::IO.enumerateFiles("hackflows/const/")) ::include(file);
 foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
 
-::mods_queue(hx.ID, "mod_hooks(>=20), >mod_background_perks", function() {
+::mods_queue(hx.ID, ">mod_background_perks", function () {
     ::include("hackflows/background_perks");
     ::logInfo("hx: LOADED");
 })
