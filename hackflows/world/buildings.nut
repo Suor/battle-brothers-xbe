@@ -69,6 +69,7 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
 
 ::mods_queue(::HackflowsExp.ID, "mod_hooks(>=20)", function() {
     ::mods_hookDescendants("entity/world/settlements/buildings/building", function (cls) {
+        // .ClassName is not yet set here on cls, so we set a flag and parse script name in inherit
         cls.hackflows_isBuilding <- true;
     })
     ::mods_addHook("inherit", function (baseScript, script, cls) {

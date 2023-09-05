@@ -87,6 +87,7 @@ local locations = ::HackflowsExp.Data.AttachedLocationDrafts <- {
 // We defined data on include so that any other mod might change/update this before we patch
 ::mods_queue(::HackflowsExp.ID, "mod_hooks(>=20)", function() {
     ::mods_hookDescendants("entity/world/attached_location", function (cls) {
+        // .ClassName is not yet set here on cls, so we set a flag and parse script name in inherit
         cls.hackflows_isAttachedLocation <- true;
     })
     ::mods_addHook("inherit", function (baseScript, script, cls) {
