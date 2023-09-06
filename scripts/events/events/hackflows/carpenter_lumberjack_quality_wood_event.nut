@@ -5,7 +5,7 @@ this.carpenter_lumberjack_quality_wood_event <- this.inherit("scripts/events/eve
 	},
 	function create()
 	{
-		this.m.ID = "event.carpenter_lumberjack_quality_wood";
+		this.m.ID = "event.hackflows_carpenter_lumberjack_quality_wood";
 		this.m.Title = "Near the Forests...";
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -4,7 +4,7 @@ this.bounty_hunter_joins_company_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.bounty_hunter_joins_company";
+		this.m.ID = "event.hackflows_bounty_hunter_joins_company";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 75.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

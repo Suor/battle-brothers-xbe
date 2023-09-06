@@ -4,7 +4,7 @@ this.cook_prepares_delicious_meals_event <- this.inherit("scripts/events/event",
 	},
 	function create()
 	{
-		this.m.ID = "event.cook_prepares_delicious_meals";
+		this.m.ID = "event.hackflows_cook_prepares_delicious_meals";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

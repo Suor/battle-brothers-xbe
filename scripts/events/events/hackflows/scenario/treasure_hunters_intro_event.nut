@@ -2,7 +2,7 @@ this.treasure_hunters_intro_event <- this.inherit("scripts/events/event", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "event.treasure_hunters_intro";
+		this.m.ID = "event.hackflows_treasure_hunters_intro";
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",

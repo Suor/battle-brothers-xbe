@@ -5,7 +5,7 @@ this.cultist_requests_nose_removal_event <- this.inherit("scripts/events/event",
 	},
 	function create()
 	{
-		this.m.ID = "event.cultist_requests_nose_removal";
+		this.m.ID = "event.hackflows_cultist_requests_nose_removal";
 		this.m.Title = "During a Quiet Moment...";
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

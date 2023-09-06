@@ -7,7 +7,7 @@ this.cobbler_creates_boots_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.cobbler_creates_boots";
+		this.m.ID = "event.hackflows_cobbler_creates_boots";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

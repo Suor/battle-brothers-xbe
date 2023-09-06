@@ -4,7 +4,7 @@ this.gardener_provides_mysterious_herbs_event <- this.inherit("scripts/events/ev
 	},
 	function create()
 	{
-		this.m.ID = "event.gardener_provides_mysterious_herbs";
+		this.m.ID = "event.hackflows_gardener_provides_mysterious_herbs";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 40.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

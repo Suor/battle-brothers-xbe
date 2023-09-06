@@ -5,7 +5,7 @@ this.surgeon_cures_temporary_injury_event <- this.inherit("scripts/events/event"
 	},
 	function create()
 	{
-		this.m.ID = "event.surgeon_cures_temporary_injury";
+		this.m.ID = "event.hackflows_surgeon_cures_temporary_injury";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 15.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -4,7 +4,7 @@ this.aging_master_archer_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.aging_master_archer";
+		this.m.ID = "event.hackflows_aging_master_archer";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

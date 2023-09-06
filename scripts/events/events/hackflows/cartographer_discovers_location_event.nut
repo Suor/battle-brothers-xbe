@@ -4,7 +4,7 @@ this.cartographer_discovers_location_event <- this.inherit("scripts/events/event
 	},
 	function create()
 	{
-		this.m.ID = "event.cartographer_discovers_location";
+		this.m.ID = "event.hackflows_cartographer_discovers_location";
 		this.m.Title = "At Camp...";
 		this.m.Cooldown = 5.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

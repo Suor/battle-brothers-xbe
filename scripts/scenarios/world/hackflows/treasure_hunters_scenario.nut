@@ -212,7 +212,7 @@ this.treasure_hunters_scenario <- this.inherit("scripts/scenarios/world/starting
 			this.Music.setTrackList([
 				"music/civilians_01.ogg"
 			], this.Const.Music.CrossFadeTime);
-			this.World.Events.fire("event.treasure_hunters_intro");
+			this.World.Events.fire("event.hackflows_treasure_hunters_intro");
 		}, null);
 	}
 

@@ -4,7 +4,7 @@ this.town_watchman_improves_scouting_event <- this.inherit("scripts/events/event
 	},
 	function create()
 	{
-		this.m.ID = "event.town_watchman_improves_scouting";
+		this.m.ID = "event.hackflows_town_watchman_improves_scouting";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

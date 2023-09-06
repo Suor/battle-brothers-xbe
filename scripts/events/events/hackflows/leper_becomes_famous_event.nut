@@ -4,7 +4,7 @@ this.leper_becomes_famous_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.leper_becomes_famous";
+		this.m.ID = "event.hackflows_leper_becomes_famous";
 		this.m.Title = "In Town...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

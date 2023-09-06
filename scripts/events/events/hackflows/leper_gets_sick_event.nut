@@ -4,7 +4,7 @@ this.leper_gets_sick_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.leper_gets_sick";
+		this.m.ID = "event.hackflows_leper_gets_sick";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 20.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

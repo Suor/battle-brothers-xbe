@@ -5,7 +5,7 @@ this.torturer_removes_fainthearted_event <- this.inherit("scripts/events/event",
 	},
 	function create()
 	{
-		this.m.ID = "event.torturer_removes_fainthearted";
+		this.m.ID = "event.hackflows_torturer_removes_fainthearted";
 		this.m.Title = "During a Spare Moment...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

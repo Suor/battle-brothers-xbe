@@ -7,7 +7,7 @@ this.skirmisher_trains_stealth_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.skirmisher_trains_stealth";
+		this.m.ID = "event.hackflows_skirmisher_trains_stealth";
 		this.m.Title = "On the March...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

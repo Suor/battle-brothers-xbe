@@ -5,7 +5,7 @@ this.historian_and_cartographer_pinpoint_famed_event <- this.inherit("scripts/ev
 	},
 	function create()
 	{
-		this.m.ID = "event.historian_and_cartographer_pinpoint_famed";
+		this.m.ID = "event.hackflows_historian_and_cartographer_pinpoint_famed";
 		this.m.Title = "During Camp...";
 		this.m.Cooldown = 12.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -99,7 +99,7 @@ this.random_four_scenario <- this.inherit("scripts/scenarios/world/starting_scen
 			this.Music.setTrackList([
 				"music/civilians_01.ogg"
 			], this.Const.Music.CrossFadeTime);
-			this.World.Events.fire("event.random_four_intro");
+			this.World.Events.fire("event.hackflows_random_four_intro");
 		}, null);
 	}
 

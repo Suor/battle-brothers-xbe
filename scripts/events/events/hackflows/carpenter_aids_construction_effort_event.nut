@@ -5,7 +5,7 @@ this.carpenter_aids_construction_effort_event <- this.inherit("scripts/events/ev
 	},
 	function create()
 	{
-		this.m.ID = "event.carpenter_aids_construction_effort";
+		this.m.ID = "event.hackflows_carpenter_aids_construction_effort";
 		this.m.Title = "In Town...";
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

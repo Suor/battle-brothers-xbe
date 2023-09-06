@@ -5,7 +5,7 @@ this.hangman_vs_criminal_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.hangman_vs_criminal";
+		this.m.ID = "event.hackflows_hangman_vs_criminal";
 		this.m.Title = "During Camp...";
 		this.m.Cooldown = 30.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

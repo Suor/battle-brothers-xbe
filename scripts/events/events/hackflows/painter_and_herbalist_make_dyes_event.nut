@@ -5,7 +5,7 @@ this.painter_and_herbalist_make_dyes_event <- this.inherit("scripts/events/event
 	},
 	function create()
 	{
-		this.m.ID = "event.painter_and_herbalist_make_dyes";
+		this.m.ID = "event.hackflows_painter_and_herbalist_make_dyes";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -7,7 +7,7 @@ this.blacksmith_crafts_masterwork_weapon_event <- this.inherit("scripts/events/e
 	},
 	function create()
 	{
-		this.m.ID = "event.blacksmith_crafts_masterwork_weapon";
+		this.m.ID = "event.hackflows_blacksmith_crafts_masterwork_weapon";
 		this.m.Title = "Close to Town...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

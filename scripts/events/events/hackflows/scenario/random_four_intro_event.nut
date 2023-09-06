@@ -2,7 +2,7 @@ this.random_four_intro_event <- this.inherit("scripts/events/event", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "event.random_four_intro";
+		this.m.ID = "event.hackflows_random_four_intro";
 		this.m.IsSpecial = true;
 		this.m.Screens.push({
 			ID = "A",

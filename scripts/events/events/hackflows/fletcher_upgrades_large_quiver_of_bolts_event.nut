@@ -4,7 +4,7 @@ this.fletcher_upgrades_large_quiver_of_bolts_event <- this.inherit("scripts/even
 	},
 	function create()
 	{
-		this.m.ID = "event.fletcher_upgrades_large_quiver_of_bolts";
+		this.m.ID = "event.hackflows_fletcher_upgrades_large_quiver_of_bolts";
 		this.m.Title = "At camp...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

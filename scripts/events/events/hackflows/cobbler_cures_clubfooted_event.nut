@@ -5,7 +5,7 @@ this.cobbler_cures_clubfooted_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.cobbler_cures_clubfooted";
+		this.m.ID = "event.hackflows_cobbler_cures_clubfooted";
 		this.m.Title = "On the March...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

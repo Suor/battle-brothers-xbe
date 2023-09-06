@@ -5,7 +5,7 @@ this.cook_vs_ratcatcher_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.cook_vs_ratcatcher";
+		this.m.ID = "event.hackflows_cook_vs_ratcatcher";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

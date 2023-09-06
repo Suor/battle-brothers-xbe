@@ -5,7 +5,7 @@ this.cook_cures_fat_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.cook_cures_fat";
+		this.m.ID = "event.hackflows_cook_cures_fat";
 		this.m.Title = "On the March...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

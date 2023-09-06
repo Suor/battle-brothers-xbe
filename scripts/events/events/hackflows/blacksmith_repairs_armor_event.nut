@@ -4,7 +4,7 @@ this.blacksmith_repairs_armor_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.blacksmith_repairs_armor";
+		this.m.ID = "event.hackflows_blacksmith_repairs_armor";
 		this.m.Title = "At camp...";
 		this.m.Cooldown = 5.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

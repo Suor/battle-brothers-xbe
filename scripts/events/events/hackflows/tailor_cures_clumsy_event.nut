@@ -5,7 +5,7 @@ this.tailor_cures_clumsy_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.tailor_cures_clumsy";
+		this.m.ID = "event.hackflows_tailor_cures_clumsy";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

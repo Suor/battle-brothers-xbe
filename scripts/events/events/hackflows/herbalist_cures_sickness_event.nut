@@ -5,7 +5,7 @@ this.herbalist_cures_sickness_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.herbalist_cures_sickness";
+		this.m.ID = "event.hackflows_herbalist_cures_sickness";
 		this.m.Title = "On the road...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

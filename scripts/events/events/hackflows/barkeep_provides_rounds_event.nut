@@ -5,7 +5,7 @@ this.barkeep_provides_rounds_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.barkeep_provides_rounds";
+		this.m.ID = "event.hackflows_barkeep_provides_rounds";
 		this.m.Title = "Near Town...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

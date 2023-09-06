@@ -2,7 +2,7 @@ this._add_item3_event <- this.inherit("scripts/events/event", {
 	m = {},
 	function create()
 	{
-		this.m.ID = "event._add_item3";
+		this.m.ID = "event.hackflows__add_item3";
 		this.m.Title = "...";
 		this.m.Cooldown = 10.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

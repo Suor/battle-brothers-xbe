@@ -4,7 +4,7 @@ this.painter_provides_paint_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.painter_provides_paint";
+		this.m.ID = "event.hackflows_painter_provides_paint";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

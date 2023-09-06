@@ -4,7 +4,7 @@ this.tailor_crafts_masterwork_armor_event <- this.inherit("scripts/events/event"
 	},
 	function create()
 	{
-		this.m.ID = "event.tailor_crafts_masterwork_armor";
+		this.m.ID = "event.hackflows_tailor_crafts_masterwork_armor";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

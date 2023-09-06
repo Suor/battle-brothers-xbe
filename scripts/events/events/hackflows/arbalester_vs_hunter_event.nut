@@ -5,7 +5,7 @@ this.arbalester_vs_hunter_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.arbalester_vs_hunter";
+		this.m.ID = "event.hackflows_arbalester_vs_hunter";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

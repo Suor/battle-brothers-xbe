@@ -4,7 +4,7 @@ this.carpenter_upgrades_cart_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.carpenter_upgrades_cart";
+		this.m.ID = "event.hackflows_carpenter_upgrades_cart";
 		this.m.Title = "On the road...";
 		this.m.Cooldown = 99999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

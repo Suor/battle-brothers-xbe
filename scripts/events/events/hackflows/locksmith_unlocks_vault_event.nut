@@ -4,7 +4,7 @@ this.locksmith_unlocks_vault_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.locksmith_unlocks_vault";
+		this.m.ID = "event.hackflows_locksmith_unlocks_vault";
 		this.m.Title = "After the Battle...";
 		this.m.Cooldown = 20.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -5,7 +5,7 @@ this.drifter_joins_company_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.drifter_joins_company";
+		this.m.ID = "event.hackflows_drifter_joins_company";
 		this.m.Title = "Along the Way...";
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

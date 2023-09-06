@@ -4,7 +4,7 @@ this.dissenter_challenges_player_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.dissenter_challenges_player";
+		this.m.ID = "event.hackflows_dissenter_challenges_player";
 		this.m.Title = "During Camp...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

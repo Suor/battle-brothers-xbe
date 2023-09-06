@@ -4,7 +4,7 @@ this.fletcher_recovers_arrows_event <- this.inherit("scripts/events/event", {
 	},
 	function create()
 	{
-		this.m.ID = "event.fletcher_recovers_arrows";
+		this.m.ID = "event.hackflows_fletcher_recovers_arrows";
 		this.m.Title = "After the battle...";
 		this.m.Cooldown = 10.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

@@ -6,7 +6,7 @@ this.atilliator_crafts_masterwork_crossbow_event <- this.inherit("scripts/events
 	},
 	function create()
 	{
-		this.m.ID = "event.atilliator_crafts_masterwork_crossbow";
+		this.m.ID = "event.hackflows_atilliator_crafts_masterwork_crossbow";
 		this.m.Title = "Close to Town...";
 		this.m.Cooldown = 999999.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({

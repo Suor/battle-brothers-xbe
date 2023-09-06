@@ -4,7 +4,7 @@ this.atilliator_upgrades_crossbow_event <- this.inherit("scripts/events/event", 
 	},
 	function create()
 	{
-		this.m.ID = "event.atilliator_upgrades_crossbow";
+		this.m.ID = "event.hackflows_atilliator_upgrades_crossbow";
 		this.m.Title = "At camp...";
 		this.m.Cooldown = 50.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
