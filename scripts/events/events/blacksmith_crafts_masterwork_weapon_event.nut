@@ -65,7 +65,7 @@ this.blacksmith_crafts_masterwork_weapon_event <- this.inherit("scripts/events/e
 					icon = "ui/icons/asset_money.png",
 					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]6,000[/color] Crowns"
 				});
-				local item = this.new("scripts/items/weapons/special/masterwork_greatsword");
+				local item = this.new("scripts/items/weapons/hackflows/masterwork_greatsword");
 				item.m.Name = _event.m.Blacksmith.getNameOnly() + "\'s Masterwork Zweihander";
 				this.World.Assets.getStash().add(item);
 				this.List.push({

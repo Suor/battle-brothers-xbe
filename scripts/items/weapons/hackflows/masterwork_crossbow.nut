@@ -17,7 +17,7 @@ this.masterwork_crossbow <- this.inherit("scripts/items/weapons/named/named_weap
 		this.named_weapon.create();
 		this.m.Variant = this.Math.rand(1, 3);
 		this.updateVariant();
-		this.m.ID = "weapon.masterwork_crossbow";
+		this.m.ID = "weapon.hackflows_masterwork_crossbow";
 		this.m.NameList = this.Const.Strings.CrossbowNames;
 		this.m.Description = "An ornate crossbow built with components of the highest quality. When loaded, the string retains immense potential energy relative to the bow\'s weight, allowing each shot to pierce even heavy armor with incredible efficiency. Truly the work of a master atilliator.";
 		this.m.Categories = "Crossbow, Two-Handed";

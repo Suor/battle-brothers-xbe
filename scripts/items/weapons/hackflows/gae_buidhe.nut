@@ -3,7 +3,7 @@ this.gae_buidhe <- this.inherit("scripts/items/weapons/weapon", {
 	function create()
 	{
 		this.weapon.create();
-		this.m.ID = "weapon.gae_buidhe";
+		this.m.ID = "weapon.hackflows_gae_buidhe";
 		this.m.Name = "Gae Buidhe";
 		this.m.Description = "A brilliant golden spear with a refined point that glistens even in the darkness. Wielders of the spear never miss a thrust. It is as if the weapon rewrites fate itself until the strike reaches its intended target. It is the sister spear of the Gae Dearg.";
 		this.m.Categories = "Spear, One-Handed";

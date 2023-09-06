@@ -64,7 +64,7 @@ this.atilliator_crafts_masterwork_crossbow_event <- this.inherit("scripts/events
 					icon = "ui/icons/asset_money.png",
 					text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]5,000[/color] Crowns"
 				});
-				local item = this.new("scripts/items/weapons/special/masterwork_crossbow");
+				local item = this.new("scripts/items/weapons/hackflows/masterwork_crossbow");
 				item.m.Name = _event.m.Atilliator.getNameOnly() + "\'s Masterwork Crossbow";
 				this.World.Assets.getStash().add(item);
 				this.List.push({

@@ -92,7 +92,7 @@ this.lancer_gae_buidhe_event <- this.inherit("scripts/events/event", {
 			function start( _event )
 			{
 				this.Characters.push(_event.m.Lancer.getImagePath());
-				local item = this.new("scripts/items/weapons/legendary/gae_buidhe");
+				local item = this.new("scripts/items/weapons/hackflows/gae_buidhe");
 				this.World.Assets.getStash().add(item);
 				this.List.push({
 					id = 10,

@@ -7,7 +7,7 @@ this.masterwork_greatsword <- this.inherit("scripts/items/weapons/named/named_we
 		this.named_weapon.create();
 		this.m.Variant = this.Math.rand(1, 3);
 		this.updateVariant();
-		this.m.ID = "weapon.masterwork_greatsword";
+		this.m.ID = "weapon.hackflows_masterwork_greatsword";
 		this.m.NameList = this.Const.Strings.GreatswordNames;
 		this.m.Description = "A greatsword of exceptional make. It is no more difficult to use than an ordinary greatsword, but has the sharpness and weight to deliver much more devastating blows. Truly the work of a master smith!";
 		this.m.Categories = "Sword, Two-Handed";
