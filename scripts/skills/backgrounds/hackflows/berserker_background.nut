@@ -78,6 +78,7 @@ this.berserker_background <- this.inherit("scripts/skills/backgrounds/character_
 
 	function onBuildDescription()
 	{
+		// TODO: shorten description
 		return "{It is said that man is born with the wilderness in him, and that he does wrong by turning his back on it. This is a mantra esteemed by those that find refuge in the forests, spurning the filth of civilization and returning to the old ways. However, between the men of the wilderness and the men of civilization, there exists a third class of men that dare to live at the fringes of both. They are called berserkers. %name% is one such man. He is so immense that lesser men appear almost as children; his body is covered in scars and his hair grows unimpeded in every which way. At a quick glance he appears to be a conventional wildman, if indeed there exists such a thing. However, his piercing, intelligent gaze shows that though his body was honed by the cruelties of nature, so too has his mind been honed by the cruelties of man.}";
 	}
 

@@ -77,6 +77,7 @@ this.fletcher_upgrades_large_quiver_of_bolts_event <- this.inherit("scripts/even
 
 		foreach( item in stash )
 		{
+			// NOTE: won't work with stupid_game as it modifies Ammo count
 			if (item != null && item.getID() == "ammo.bolts" && item.getAmmoMax() == 14)
 			{
 				largeQuiverInInventory = true;
