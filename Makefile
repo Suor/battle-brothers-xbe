@@ -19,3 +19,9 @@ install:
 	zip -r $${FILENAME} $(SOURCES); \
 	cp $${FILENAME} $(DATA_DIR)$${FILENAME}; \
 	rm $${FILENAME}
+
+genfiles:
+	find hackflows scripts -type f -print | perl -nE 'BEGIN{say "return ["}chomp;print "\"";print;say"\""; END{say "]"}' > tests/_files.nut
+
+test:
+	squirrel tests/run.nut
