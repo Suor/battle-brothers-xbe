@@ -42,7 +42,6 @@ local locations = ::HackflowsExp.Data.AttachedLocationDrafts <- {
         "hackflows/gardener_background"
         "hackflows/herbalist_background"
         "hackflows/herbalist_background"
-        "hackflows/herbalist_background"
         "hackflows/leper_background"
     ]
     hunters_cabin_location = []
@@ -75,7 +74,6 @@ local locations = ::HackflowsExp.Data.AttachedLocationDrafts <- {
     wooden_watchtower_location = [
         "hackflows/skirmisher_background"
         "hackflows/town_watchman_background"
-        "hackflows/town_watchman_background"
     ]
     wool_spinner_location = []
     workshop_location = [
@@ -96,7 +94,7 @@ local locations = ::HackflowsExp.Data.AttachedLocationDrafts <- {
         local name = split(script, "/").top();
         local backgrounds = name in locations ? locations[name] : [];
         if (backgrounds.len() == 0) return;
-        this.logInfo("hx: hook location " + name + " dl=" + ("onUpdateDraftList" in cls));
+        // this.logInfo("hx: hook location " + name + " dl=" + ("onUpdateDraftList" in cls));
 
         local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
         cls.onUpdateDraftList <- function (_list) {

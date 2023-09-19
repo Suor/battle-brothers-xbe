@@ -11,6 +11,7 @@ this.leper_background <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.BadEnding = "The fighting life is a rough one, and %name% the once-beggar saw fit to retire from it before it became a deadly one. Unfortunately, he went back to beggaring. Word has it that a nobleman cleaned a city of riff-raff and sent them marching north despite it being winter. Cold and hungry, %name% died on the side of a road, a tin cup frozen to his finger.";
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 3;
+		// A ridiculous list
 		this.m.Excluded = [
 			"trait.athletic",
 			"trait.bleeder",
@@ -49,6 +50,9 @@ this.leper_background <- this.inherit("scripts/skills/backgrounds/character_back
 			"trait.tiny",
 			"trait.weasel"
 		];
+		// this.m.MoreLikely <- [
+		// 	"trait.spartan"
+		// ]
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.Hitpoints
 		];

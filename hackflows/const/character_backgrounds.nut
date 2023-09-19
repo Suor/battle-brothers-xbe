@@ -31,6 +31,7 @@ local gt = getroottable();
     "hackflows/lancer_background"
 ])
 
+// TODO: move this out
 gt.Const.RandomFourGroupABackgrounds <- [
     "hackflows/berserker_background"
     "hackflows/bodyguard_background"

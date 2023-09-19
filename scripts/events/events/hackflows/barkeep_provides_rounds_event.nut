@@ -131,7 +131,7 @@ this.barkeep_provides_rounds_event <- this.inherit("scripts/events/event", {
 
 		this.m.Town = town;
 		this.m.Barkeep = candidates[this.Math.rand(0, candidates.len() - 1)];
-		this.m.Score = candidates.len() * 500;
+		this.m.Score = candidates.len() * 20;
 	}
 
 	function onPrepare()

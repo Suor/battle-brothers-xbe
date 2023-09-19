@@ -58,6 +58,8 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
         "hackflows/lancer_background"
         "hackflows/lancer_background"
         "hackflows/champion_background"
+        "hackflows/master_archer_background"
+        "hackflows/bodyguard_background"
     ]
     weaponsmith_building = [
         "hackflows/blacksmith_background"
@@ -78,7 +80,7 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
         local name = split(script, "/").top();
         local backgrounds = name in buildings ? buildings[name] : [];
         if (backgrounds.len() == 0) return;
-        this.logInfo("hx: hook building " + name + " dl=" + ("onUpdateDraftList" in cls));
+        // this.logInfo("hx: hook building " + name + " dl=" + ("onUpdateDraftList" in cls));
 
         local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
         cls.onUpdateDraftList <- function (_list) {

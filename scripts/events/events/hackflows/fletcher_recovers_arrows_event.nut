@@ -84,7 +84,7 @@ this.fletcher_recovers_arrows_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Fletcher = candidates_fletcher[this.Math.rand(0, candidates_fletcher.len() - 1)];
-		this.m.Score = candidates_fletcher.len() * 50;
+		this.m.Score = candidates_fletcher.len() * 10;
 	}
 
 	function onPrepare()

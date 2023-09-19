@@ -6,7 +6,7 @@ this.random_four_scenario <- this.inherit("scripts/scenarios/world/starting_scen
 		this.m.Name = "Random Four";
 		this.m.Description = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]You aren\'t sure how the four of you ended up in the same band. Nevertheless, now seems as good a time as any for this crew to go pro.\n\n[color=#bcad8c]Strange Circumstances:[/color] Start with four brothers of completely random backgrounds.\n[color=#bcad8c]Thread of Fate:[/color] Start with no renown, but gain renown at 1.25 times the normal rate.[/p]";
 		this.m.Difficulty = 2;
-		this.m.Order = 50;
+		this.m.Order = 17;
 		this.m.IsFixedLook = true;
 	}
 

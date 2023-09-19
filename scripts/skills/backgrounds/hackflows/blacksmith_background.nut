@@ -97,7 +97,7 @@ this.blacksmith_background <- this.inherit("scripts/skills/backgrounds/character
 	{
 		local items = this.getContainer().getActor().getItems();
 		local r;
-		r = this.Math.rand(0, 4);
+		r = this.Math.rand(0, 6);
 
 		if (r == 0)
 		{
@@ -113,11 +113,11 @@ this.blacksmith_background <- this.inherit("scripts/skills/backgrounds/character
 		}
 		else if (r == 3)
 		{
-			items.equip(this.new("scripts/items/weapons/warhammer"));
-		}
-		else if (r == 4)
-		{
 			items.equip(this.new("scripts/items/weapons/winged_mace"));
+		}
+		else
+		{
+			items.equip(this.new("scripts/items/weapons/warhammer"));
 		}
 
 		r = this.Math.rand(0, 1);

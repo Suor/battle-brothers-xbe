@@ -4,9 +4,9 @@ this.fearsome_foursome_scenario <- this.inherit("scripts/scenarios/world/startin
 	{
 		this.m.ID = "scenario.hackflows_fearsome_foursome";
 		this.m.Name = "Fearsome Foursome";
-		this.m.Description = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]You aren\'t sure how the four of you ended up in the same band. Some of you at least have some battle experience, others have just nothing else to do with their lives.\n\n[color=#bcad8c]Strange Circumstances:[/color] Start with four brothers of different level backgrounds.\n[color=#bcad8c]Thread of Fate:[/color] Start with no renown, but gain renown at 1.25 times the normal rate.[/p]";
+		this.m.Description = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]You aren\'t sure how the four of you ended up in the same band. Some of you at least have some battle experience, others have just nothing else to do with their lives.\n\n[color=#bcad8c]Strange Circumstances:[/color] Start with four brothers high and low backgrounds.\n[color=#bcad8c]Thread of Fate:[/color] Start with no renown, but gain renown at 1.25 times the normal rate.[/p]";
 		this.m.Difficulty = 2;
-		this.m.Order = 51;
+		this.m.Order = 18;
 		this.m.IsFixedLook = true;
 	}
 

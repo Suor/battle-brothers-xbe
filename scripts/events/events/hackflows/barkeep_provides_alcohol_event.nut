@@ -9,7 +9,7 @@ this.barkeep_provides_alcohol_event <- this.inherit("scripts/events/event", {
 		this.m.Cooldown = 25.0 * this.World.getTime().SecondsPerDay;
 		this.m.Screens.push({
 			ID = "A",
-			Text = "[img]gfx/ui/events/event_24.png[/img][M] As you and your men stop briefly to rest you spy out of the corner of your eye some shadowy figures making their way towards the supply caravan. You shout out, grab your sword, and begin rushing towards the cart when %barkeep% the barkeep pokes his head out and gives you a friendly wave. %SPEECH_ON%What\'s got you yellin\' out like that for, captain?%SPEECH_OFF% You curse and demand to know if he\'s seen anything, only to be greeted by several strangers stacking some crates near your campsite. %barkeep% beams. %SPEECH_ON%Not to worry, captain. Made a connection with the tavern owner here last time we finished up a contract. Word got out that we frequent the tavern, seemed to be really, really good for business.%SPEECH_OFF% He gestures towards the new crates. %SPEECH_ON%Next few rounds are on them!%SPEECHOFF%",
+			Text = "[img]gfx/ui/events/event_24.png[/img][M] As you and your men stop briefly to rest you spy out of the corner of your eye some shadowy figures making their way towards the supply caravan. You shout out, grab your sword, and begin rushing towards the cart when %barkeep% the barkeep pokes his head out and gives you a friendly wave. %SPEECH_ON%What\'s got you yellin\' out like that for, captain?%SPEECH_OFF% You curse and demand to know if he\'s seen anything, only to be greeted by several strangers stacking some crates near your campsite. %barkeep% beams. %SPEECH_ON%Not to worry, captain. Made a connection with the tavern owner here last time we finished up a contract. Word got out that we frequent the tavern, seemed to be really, really good for business.%SPEECH_OFF% He gestures towards the new crates. %SPEECH_ON%Next few rounds are on them!%SPEECH_OFF%",
 			Image = "",
 			List = [],
 			Characters = [],
@@ -119,7 +119,7 @@ this.barkeep_provides_alcohol_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Barkeep = candidates[this.Math.rand(0, candidates.len() - 1)];
-		this.m.Score = candidates.len() * 500;
+		this.m.Score = candidates.len() * 15;
 	}
 
 	function onPrepare()

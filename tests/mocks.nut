@@ -66,6 +66,13 @@ logInfo <- function(s) {
 Const <- {
     SkillType = {Active = 1}
     ItemSlot = {Mainhand = 0, Body = 2, Head = 3}
+    CharacterBackgrounds = []
+    CharacterLaborerBackgrounds = []
+    CharacterVillageBackgrounds = []
+    CharacterThiefBackgrounds = []
+    CharacterPiracyBackgrounds = []
+    CharacterVeteranBackgrounds = []
+    Strings = {}
 }
 local Days = 110;
 World <- {
@@ -97,8 +104,11 @@ createColor <- function (color) {return color}
     func({})
 }
 ::mods_hookDescendants <- function (x, func) {
-    func({SuperName = "actor", actor = {onDeath = 1, onResurrected = 1}})
+    func({})
 }
 ::mods_hookNewObject <- function (x, func) {
     func({})
+}
+::mods_addHook <- function(name, func) {
+    func("some/parent", "some/parent/child", {})
 }

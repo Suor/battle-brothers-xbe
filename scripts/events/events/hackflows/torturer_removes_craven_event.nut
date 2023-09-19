@@ -135,7 +135,7 @@ this.torturer_removes_craven_event <- this.inherit("scripts/events/event", {
 			this.m.Torturer.getName()
 		]);
 		_vars.push([
-			"cravenrbro",
+			"cravenbro",
 			this.m.CravenBro.getName()
 		]);
 	}

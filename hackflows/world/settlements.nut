@@ -2,7 +2,6 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
     city_state = [
         "hackflows/master_archer_background"
         "hackflows/master_archer_background"
-        "hackflows/master_archer_background"
         "hackflows/myrmidon_background"
         "hackflows/myrmidon_background"
         "hackflows/myrmidon_background"
@@ -53,6 +52,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/painter_background"
         "hackflows/pirate_background"
         "hackflows/pirate_background"
+        "hackflows/outlander_background"
         "hackflows/roofer_background"
         "hackflows/skirmisher_background"
         "hackflows/surgeon_background"
@@ -129,6 +129,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/fletcher_background"
         "hackflows/gardener_background"
         "hackflows/gardener_background"
+        "hackflows/gardener_background"
         "hackflows/hangman_background"
         "hackflows/herbalist_background"
         "hackflows/lancer_background"
@@ -156,6 +157,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/drifter_background"
         "hackflows/druid_background"
         "hackflows/fletcher_background"
+        "hackflows/gardener_background"
         "hackflows/gardener_background"
         "hackflows/painter_background"
         "hackflows/roofer_background"
@@ -202,6 +204,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/bodyguard_background"
         "hackflows/bounty_hunter_background"
         "hackflows/cartographer_background"
+        "hackflows/champion_background"
         "hackflows/cobbler_background"
         "hackflows/dissenter_background"
         "hackflows/drifter_background"
@@ -251,6 +254,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/bounty_hunter_background"
         "hackflows/cobbler_background"
         "hackflows/cook_background"
+        "hackflows/champion_background"
         "hackflows/dissenter_background"
         "hackflows/dissenter_background"
         "hackflows/drifter_background"
@@ -278,6 +282,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/cook_background"
         "hackflows/dissenter_background"
         "hackflows/drifter_background"
+        "hackflows/falconer_background"
         "hackflows/fletcher_background"
         "hackflows/locksmith_background"
         "hackflows/master_archer_background"
@@ -347,6 +352,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/con_artist_background"
         "hackflows/dissenter_background"
         "hackflows/myrmidon_background"
+        "hackflows/outlander_background"
         "hackflows/roofer_background"
         "hackflows/town_watchman_background"
     ]
@@ -419,12 +425,14 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/atilliator_background"
         "hackflows/bodyguard_background"
         "hackflows/dissenter_background"
+        "hackflows/falconer_background"
         "hackflows/skirmisher_background"
         "hackflows/town_watchman_background"
     ]
     medium_steppe_village = [
         "hackflows/cartographer_background"
         "hackflows/con_artist_background"
+        "hackflows/falconer_background"
         "hackflows/myrmidon_background"
         "hackflows/skirmisher_background"
         "hackflows/town_watchman_background"
@@ -476,6 +484,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/carpenter_background"
         "hackflows/dissenter_background"
         "hackflows/fletcher_background"
+        "hackflows/druid_background"
         "hackflows/town_watchman_background"
     ]
     small_lumber_village = [
@@ -504,10 +513,13 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/arbalester_background"
         "hackflows/atilliator_background"
         "hackflows/dissenter_background"
+        "hackflows/falconer_background"
         "hackflows/town_watchman_background"
     ]
     small_steppe_village = [
         "hackflows/con_artist_background"
+        "hackflows/druid_background"
+        "hackflows/falconer_background"
         "hackflows/town_watchman_background"
     ]
     small_swamp_fort = [
@@ -518,6 +530,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/town_watchman_background"
     ]
     small_swamp_village = [
+        "hackflows/druid_background"
         "hackflows/herbalist_background"
         "hackflows/leper_background"
         "hackflows/town_watchman_background"
@@ -529,6 +542,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
     ]
     small_tundra_village = [
         "hackflows/carpenter_background"
+        "hackflows/druid_background"
         "hackflows/town_watchman_background"
     ]
 }
@@ -545,12 +559,14 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         local name = split(script, "/").top();
         local backgrounds = name in towns ? towns[name] : [];
         if (backgrounds.len() == 0) return;
-        this.logInfo("hx: hook town " + name + " dl=" + ("onUpdateDraftList" in cls));
+        // this.logInfo("hx: hook town " + name + " dl=" + ("onUpdateDraftList" in cls));
 
         local create = cls.create;
         cls.create = function () {
             create();
             this.m.DraftList.extend(backgrounds);
+            // This means smaller villages with shorter lists will have higher chance
+            if (Math.rand(1, 2) == 1) this.m.DraftList.push("hackflows/folk_hero_background");
         }
     })
 })

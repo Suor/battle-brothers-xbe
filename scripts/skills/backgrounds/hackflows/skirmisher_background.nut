@@ -68,8 +68,8 @@ this.skirmisher_background <- this.inherit("scripts/skills/backgrounds/character
 			Stamina = [6, 8]
 			MeleeSkill = [5, 5]
 			RangedSkill = [15, 7]
-			MeleeDefense = [0, 0]
-			RangedDefense = [0, 0]
+			MeleeDefense = [0, 2]
+			RangedDefense = [0, 3]
 			Initiative = [10, 10]
 		};
 		return c;
