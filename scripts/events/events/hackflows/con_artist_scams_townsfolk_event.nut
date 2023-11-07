@@ -32,6 +32,7 @@ this.con_artist_scams_townsfolk_event <- this.inherit("scripts/events/event", {
 
 	function onUpdateScore()
 	{
+		return // Broken
 		local brothers = this.World.getPlayerRoster().getAll();
 		this.m.Score = 1;
 	}
