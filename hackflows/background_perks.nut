@@ -125,8 +125,11 @@ local chances = {
     folk_hero = {
         "colossus": 30
         "brawny": 30
-        "gifted": 15
-        "underdog": 10
+        "underdog": 20
+        "hackflows.flesh_on_the_bones": 20
+        "relentless": 20
+        "rally_the_troops": 10
+        "gifted": 5
     }
 
     gardener = {
