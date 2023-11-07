@@ -6,7 +6,6 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
         "hackflows/myrmidon_background"
         "hackflows/myrmidon_background"
         "hackflows/myrmidon_background"
-        "hackflows/folk_hero_background"
         "hackflows/champion_background"
         "hackflows/champion_background"
         "hackflows/berserker_background"
@@ -566,7 +565,7 @@ local towns = ::HackflowsExp.Data.SettlementDrafts <- {
             create();
             this.m.DraftList.extend(backgrounds);
             // This means smaller villages with shorter lists will have higher chance
-            if (Math.rand(1, 2) == 1) this.m.DraftList.push("hackflows/folk_hero_background");
+            if (Math.rand(1, 3) >= 2) this.m.DraftList.push("hackflows/folk_hero_background");
         }
     })
 })
