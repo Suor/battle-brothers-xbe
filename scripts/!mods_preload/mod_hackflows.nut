@@ -1,7 +1,7 @@
 local hx = ::HackflowsExp <- {
     ID = "mod_hackflows"
     Name = "Hackflow's Expansion"
-    Version = "0.1.0"
+    Version = "0.2.0"
     Data = {}
 };
 ::mods_registerMod(hx.ID, hx.Version, hx.Name);
@@ -13,15 +13,15 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     ::include("hackflows/background_perks");
     ::logInfo("hx: LOADED");
 
-    // Debug these lists
-    ::mods_hookChildren("scenarios/world/starting_scenario", function (cls) {
-        local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
-        cls.onUpdateDraftList <- function (_list) {
-            if (original) original(_list);
-            _list.sort(@(a, b) a <=> b);
-            ::std.Debug.log("drafts", _list);
-        }
-    })
+    // // Debug these lists
+    // ::mods_hookChildren("scenarios/world/starting_scenario", function (cls) {
+    //     local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
+    //     cls.onUpdateDraftList <- function (_list) {
+    //         if (original) original(_list);
+    //         _list.sort(@(a, b) a <=> b);
+    //         ::std.Debug.log("drafts", _list);
+    //     }
+    // })
 
     // Show enemies immediately after game load.
     // Contributed by TaroEld, refined by Enduriel.
@@ -34,23 +34,27 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
         }
     })
 
-    // // Second tier Bounty Hunter
-    // ::mods_hookExactClass("retinue/followers/bounty_hunter_follower", function (cls) {
-    //     local onUpdate = cls.onUpdate;
-    //     cls.onUpdate = function() {
-    //         this.World.Assets.m.ChampionChanceAdditional = 7;
-    //     }
-    // })
-
-    // // Second tier Blacksmith
-    // ::mods_hookBaseClass("scenarios/world/starting_scenario", function(cls) {
-    //     cls = cls[cls.SuperName];
-
-    //     local isDroppedAsLoot = cls.isDroppedAsLoot;
-    //     cls.isDroppedAsLoot = function (_item) {
-    //         return isDroppedAsLoot(_item) || Math.rand(1, 100) <= 7;
-    //     }
-    // })
+    // if (::mods_getRegisteredMod("mod_reforged")) {
+    //     ::mods_hookExactClass("skills/backgrounds/character_background", function (cls) {
+    //         local create = cls.create;
+    //         cls.create = function () {
+    //             this.m.PerkTreeMultipliers = {
+    //                 "pg.rf_resilient": 3,
+    //                 "pg.rf_trained": 2,
+    //             };
+    //             this.m.PerkTree = ::new(::DynamicPerks.Class.PerkTree).init({
+    //                 DynamicMap = {
+    //                     "pgc.rf_exclusive_1": [],
+    //                     "pgc.rf_shared_1": [],
+    //                     "pgc.rf_weapon": [],
+    //                     "pgc.rf_armor": [],
+    //                     "pgc.rf_fighting_style": []
+    //                 }
+    //             });
+    //             create();
+    //         }
+    //     })
+    // }
 })
 
 
