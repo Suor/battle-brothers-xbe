@@ -13,7 +13,7 @@ local chances = {
     }
 
     barkeep = {
-        "hold_out": 60
+        "hold_out": 30
         "steel_brow": 10
         "brawny": 10
     }
@@ -26,9 +26,10 @@ local chances = {
     }
 
     blacksmith = {
-        "mastery.hammer": 75
+        "mastery.hammer": 70
         "brawny": 30
         "student": 5
+        "hackflows.full_force": 5
     }
 
     bodyguard = {
@@ -39,7 +40,7 @@ local chances = {
     }
 
     bounty_hunter = {
-        "lone_wolf": 100
+        "lone_wolf": 50
         "head_hunter": 20
         "quick_hands": 50
         "mastery.sword": 12
@@ -82,7 +83,8 @@ local chances = {
     }
 
     con_artist = {
-        "footwork": 50
+        "footwork": 20
+        "quick_hands": 30
         "taunt": 30
         "hackflows.balance": 15
     }
@@ -93,21 +95,21 @@ local chances = {
     }
 
     dissenter = {
-        "fortified_mind": 80
+        "fortified_mind": 40
         "anticipation": 5
         "rally_the_troops": 15
     }
 
     drifter = {
-        "pathfinder": 100
+        "pathfinder": 50
         "footwork": 10
         "recover": 5
     }
 
     druid = {
-        "pathfinder": 100
-        "fortified_mind": 50
-        "hackflows.flesh_on_the_bones": 30
+        "pathfinder": 33
+        "fortified_mind": 33
+        "hackflows.flesh_on_the_bones": 50
     }
 
     falconer = {
@@ -153,8 +155,8 @@ local chances = {
     lancer = {
         "mastery.spear": 100
         "mastery.polearm": 100
-        "rotation": 100
-        "footwork": 100
+        "rotation": 40
+        "footwork": 20
     }
 
     // This one is intentionally useless
@@ -170,11 +172,11 @@ local chances = {
 
     master_archer = {
         "mastery.bow": 100
-        "bullseye": 100
+        "bullseye": 50
     }
 
     myrmidon = {
-        "relentless": 100
+        "relentless": 50
         "mastery.dagger": 20
         "mastery.sword": 20
         "hackflows.stabilized": 10
@@ -183,15 +185,16 @@ local chances = {
 
     outlander = {
         "mastery.sword": 5
-        "duelist": 100
+        "duelist": 50
         "crippling_strikes": 30
         "coup_de_grace": 20
     }
 
     painter = {
-        "fortified_mind": 20
         "student": 20
         "gifted": 20
+        "quick_hands": 10
+        "lone_wolf": 10
     }
 
     pirate = {
@@ -217,7 +220,7 @@ local chances = {
 
     surgeon = {
         "quick_hands": 50
-        "fortified_mind": 70
+        "fortified_mind": 33
         "student": 10
     }
 
@@ -258,7 +261,7 @@ foreach (key, value in chances) {
     "hold_out": 5
 }
 ::BgPerks.chances.shaman <- {
-    "fortified_mind": 50
+    "fortified_mind": 33
     "gifted": 33
     "fearsome": 20
 }
