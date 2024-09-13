@@ -1,5 +1,5 @@
 // These are accessible globally to make them editable by other mods
-local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
+local buildings = ::XBE.Data.BuildingDrafts <- {
     alchemist_building = []
     arena_building = [
         "gladiator_background"
@@ -69,7 +69,7 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
 }
 // std.Debug.log("buildings", buildings);
 
-::mods_queue(::HackflowsExp.ID, "mod_hooks(>=20)", function() {
+::mods_queue(::XBE.ID, "mod_hooks(>=20)", function() {
     ::mods_hookDescendants("entity/world/settlements/buildings/building", function (cls) {
         // .ClassName is not yet set here on cls, so we set a flag and parse script name in inherit
         cls.hackflows_isBuilding <- true;
@@ -86,7 +86,7 @@ local buildings = ::HackflowsExp.Data.BuildingDrafts <- {
         cls.onUpdateDraftList <- function (_list) {
             if (original) original(_list);
             _list.extend(backgrounds)
-            if (cls.ClassName == "arena_building") ::std.Debug.log("drafts", _list);
+            // if (cls.ClassName == "arena_building") ::std.Debug.log("drafts", _list);
         }
     })
 })

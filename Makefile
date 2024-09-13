@@ -1,5 +1,5 @@
-MOD_NAME = hackflows
-TAG_NAME = hx
+MOD_NAME = backgrounds_and_events
+TAG_NAME = xbe
 SOURCES = hackflows scripts gfx brushes
 DATA_DIR = ~/.local/share/Steam/steamapps/common/Battle\ Brothers/data/
 
@@ -10,9 +10,12 @@ test: genfiles
 	@squirrel tests/run.nut
 
 zip: check-compile
-	@LAST_TAG=$$(git tag | tail -1);
+	@set -e;
+	LAST_TAG=$$(git tag | grep $(TAG_NAME) | tail -1);
+	echo $$LAST_TAG;
 	MODIFIED=$$( git diff $$LAST_TAG --quiet $(SOURCES) || echo _MODIFIED);
-	FILENAME=mod_$(MOD_NAME)$$([[ "$$LAST_TAG" != "" ]] && echo _$$LAST_TAG || echo "")$${MODIFIED}.zip;
+	NAME=$$(echo $$LAST_TAG | perl -pE 's/^$(TAG_NAME)-/$(MOD_NAME)_/');
+	FILENAME=mod_$$([[ "$$NAME" != "" ]] && echo $$NAME || echo $(MOD_NAME))$${MODIFIED}.zip;
 	zip --filesync -r "$${FILENAME}" $(SOURCES);
 
 clean:
@@ -29,7 +32,5 @@ check-compile:
 	rm out.cnut
 
 genfiles:
-	find hackflows scripts -type f -print | perl -nE 'BEGIN{say "return ["}chomp;print "\"";print;say"\""; END{say "]"}' > tests/_files.nut
-
-# test:
-# 	squirrel tests/run.nut
+	find hackflows scripts -type f -print \
+		| perl -nE 'BEGIN{say "return ["}chomp;say "    \"$$_\"";END{say "]"}' > tests/_files.nut

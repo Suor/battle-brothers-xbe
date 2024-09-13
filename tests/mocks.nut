@@ -97,6 +97,11 @@ createColor <- function (color) {return color}
 ::mods_hookClass <- function (x, func) {
     func({});
 }
+::mods_hookExactClass <- function (x, func) {
+    func({
+        onShow = @() null
+    })
+}
 ::mods_hookChildren <- function (x, func) {
     func({})
 }
