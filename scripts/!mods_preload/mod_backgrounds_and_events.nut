@@ -9,7 +9,7 @@ local xbe = ::XBE <- {
 foreach (file in ::IO.enumerateFiles("hackflows/const/")) ::include(file);
 foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
 
-::mods_queue(hx.ID, ">mod_background_perks", function () {
+::mods_queue(xbe.ID, ">mod_background_perks", function () {
     ::include("hackflows/background_perks");
     ::logInfo("xbe: LOADED");
 
@@ -34,3 +34,13 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
         }
     })
 })
+
+::mods_queue(xbe.ID, ">msu", function () {
+     if (!("MSU" in getroottable())) return;
+    ::include("hackflows/hack_msu");
+    ::HackMSU.setup(mod, {
+        nexus = "https://www.nexusmods.com/battlebrothers/mods/769"
+        github = "https://github.com/Suor/battle-brothers-xbe"
+        tagPrefix = ""
+    })
+});
