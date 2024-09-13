@@ -1,15 +1,15 @@
-local xbe = ::XBE <- {
+local mod = ::XBE <- {
     ID = "mod_backgrounds_and_events"
     Name = "More Backgrounds and Events"
     Version = 0.5
     Data = {}
 };
-::mods_registerMod(xbe.ID, xbe.Version, xbe.Name);
+::mods_registerMod(mod.ID, mod.Version, mod.Name);
 
 foreach (file in ::IO.enumerateFiles("hackflows/const/")) ::include(file);
 foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
 
-::mods_queue(xbe.ID, ">mod_background_perks", function () {
+::mods_queue(mod.ID, ">mod_background_perks", function () {
     ::include("hackflows/background_perks");
     ::logInfo("xbe: LOADED");
 
@@ -35,7 +35,7 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     })
 })
 
-::mods_queue(xbe.ID, ">msu", function () {
+::mods_queue(mod.ID, ">msu", function () {
      if (!("MSU" in getroottable())) return;
     ::include("hackflows/hack_msu");
     ::HackMSU.setup(mod, {

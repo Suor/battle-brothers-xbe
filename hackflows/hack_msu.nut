@@ -1,10 +1,10 @@
-local version = 0.4, prev = null;
-logInfo("HackMSU 0.4 (xbe)");
+local version = 0.5, prev = null, debug = false;
+logInfo("HackMSU 0.5 (xbe)");
 if ("HackMSU" in getroottable()) {
     if (::HackMSU.version >= version) return;
     prev = ::HackMSU;
 }
-logInfo("HackMSU 0.4 in (xbe), prev = " + prev);
+logInfo("HackMSU 0.5 in (xbe), prev = " + prev);
 ::HackMSU <- {
     version = version             // HackMSU version to not overwrite newer versions of itself
     mods = prev ? prev.mods : {}  // Store our mods here
@@ -28,10 +28,10 @@ logInfo("HackMSU 0.4 in (xbe), prev = " + prev);
     }
 };
 if (prev && "unhookAll" in prev) prev.unhookAll();
-// ::std.Debug.log("prev", prev)
+if (debug) ::std.Debug.log("prev", prev)
 
 local githubTagsUrl = "https://api.github.com/repos/%s/%s/git/matching-refs/tags/%s?per_page=100";
-local githubRegex = regexp("https:\\/\\/github\\.com\\/([-\\w]+)\\/([-\\w]+)/.*");
+local githubRegex = regexp(@"https://github\.com/([-\w]+)/([-\w]+)/?.*");
 
 // A quickhand setup helper
 ::HackMSU.setup <- function (_mod, _opts) {
@@ -69,7 +69,7 @@ if (!getModsForUpdateCheck) return;
     local res = getModsForUpdateCheck();
     // Add our stuff
     foreach (id, mod in ::HackMSU.mods) res[id] <- mod.getUpdateURL();
-    // ::std.Debug.log("getModsForUpdateCheck", res);
+    if (debug) ::std.Debug.log("getModsForUpdateCheck", res);
     return res;
 }
 
@@ -91,7 +91,7 @@ if (!checkIfModVersionsAreNew) return;
             local version = rec.ref.slice(refPrefix.len());
             if (::HackMSU.isBiggerVersion(version, maxVersion)) maxVersion = version;
         }
-        // ::std.Debug.log("maxVersion", maxVersion);
+        if (debug) ::std.Debug.log("maxVersion", maxVersion);
         myData[modID] <- {body = ""}; // changes for old MSU
         if (mod.version.tostring() == maxVersion.tostring()) continue;
         myData[modID].UpdateInfo <- {
@@ -103,7 +103,7 @@ if (!checkIfModVersionsAreNew) return;
             changes = ""
         };
     }
-    // ::std.Debug.log("checkIfModVersionsAreNew", myData, 10);
+    if (debug) ::std.Debug.log("checkIfModVersionsAreNew", myData, 10);
 
     // do not send our stuff to original func, but add it on top
     foreach (modID, _ in myData) delete _modVersionData[modID];
