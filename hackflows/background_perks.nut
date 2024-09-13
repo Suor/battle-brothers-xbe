@@ -8,14 +8,16 @@ local chances = {
     }
 
     atilliator = {
-        "mastery.crossbow": 20
-        "bullseye": 8
+        "mastery.crossbow": 25
+        "bullseye": 18
+        "anticipation": 10
     }
 
     barkeep = {
         "hold_out": 30
-        "steel_brow": 10
-        "brawny": 10
+        "steel_brow": 15
+        "brawny": 15
+        "quick_hands": 7
     }
 
     berserker = {
@@ -23,6 +25,7 @@ local chances = {
         "indomitable": 10
         "killing_frenzy": 10
         "hackflows.battle_flow": 20
+        "hackflows.full_force": 5
     }
 
     blacksmith = {
@@ -43,15 +46,20 @@ local chances = {
         "lone_wolf": 50
         "head_hunter": 20
         "quick_hands": 50
-        "mastery.sword": 12
-        "mastery.mace": 12
-        "mastery.flail": 12
-        "mastery.crossbow": 12
+        "mastery.sword": 8
+        "mastery.mace": 8
+        "mastery.flail": 8
+        "mastery.crossbow": 8
+        "mastery.throwing": 8
         "hackflows.stabilized": 12
+        "backstabber": 1
     }
 
     carpenter = {
-        "quick_hands": 30
+        "mastery.hammer": 18
+        "mastery.axe": 12
+        "quick_hands": 10
+        "student": 5
     }
 
     cartographer = {
@@ -77,20 +85,24 @@ local chances = {
     }
 
     cobbler = {
-        "footwork": 20
+        "footwork": 33
         "quick_hands": 20
+        "fast_adaption": 15
         "student": 5
     }
 
     con_artist = {
-        "footwork": 20
         "quick_hands": 30
         "taunt": 30
+        "footwork": 15
+        "fast_adaption": 15
         "hackflows.balance": 15
+        "backstabber": 3
     }
 
     cook = {
-        "bags_and_belts": 50
+        "mastery.dagger": 30
+        "bags_and_belts": 30
         "underdog": 30
     }
 
@@ -137,6 +149,8 @@ local chances = {
     gardener = {
         "pathfinder": 5
         "underdog": 20
+        "bags_and_belts": 20
+        "mastery.axe": 3
     }
 
     hangman = {
@@ -168,6 +182,8 @@ local chances = {
 
     locksmith = {
         "quick_hands": 100
+        "fast_adaption": 33
+        "hackflows.balance": 33
     }
 
     master_archer = {
@@ -208,13 +224,15 @@ local chances = {
     roofer = {
         "recover": 20
         "brawny": 20
+        "footwork": 20
     }
 
     skirmisher = {
         "mastery.throwing": 25
-        "shield_expert": 50
+        "shield_expert": 33
         "anticipation": 10
-        "footwork": 50
+        "footwork": 33
+        "overwhelm": 10
         "hackflows.balance": 10
     }
 
