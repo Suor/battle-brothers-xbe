@@ -1,7 +1,7 @@
-local hx = ::HackflowsExp <- {
-    ID = "mod_hackflows"
-    Name = "Hackflow's Expansion"
-    Version = "0.2.0"
+local hx = ::XBE <- {
+    ID = "mod_backgrounds_and_events"
+    Name = "More Backgrounds and Events"
+    Version = 0.5
     Data = {}
 };
 ::mods_registerMod(hx.ID, hx.Version, hx.Name);
@@ -13,15 +13,15 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     ::include("hackflows/background_perks");
     ::logInfo("hx: LOADED");
 
-    // // Debug these lists
-    // ::mods_hookChildren("scenarios/world/starting_scenario", function (cls) {
-    //     local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
-    //     cls.onUpdateDraftList <- function (_list) {
-    //         if (original) original(_list);
-    //         _list.sort(@(a, b) a <=> b);
-    //         ::std.Debug.log("drafts", _list);
-    //     }
-    // })
+    // Debug these lists
+    ::mods_hookChildren("scenarios/world/starting_scenario", function (cls) {
+        local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;
+        cls.onUpdateDraftList <- function (_list) {
+            if (original) original(_list);
+            _list.sort(@(a, b) a <=> b);
+            ::std.Debug.log("drafts", _list);
+        }
+    })
 
     // Show enemies immediately after game load.
     // Contributed by TaroEld, refined by Enduriel.
@@ -58,7 +58,7 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
 })
 
 
-local Debug = ::std.Debug;
+// local Debug = ::std.Debug;
 
 // ::mods_queue(hx.ID, null, function () {
 //     // ::mods_hookExactClass("entity/tactical/player", function (cls) {
