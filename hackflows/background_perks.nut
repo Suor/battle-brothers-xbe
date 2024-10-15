@@ -254,8 +254,8 @@ local chances = {
         "anticipation": 50
         "rotation": 50
     }
-}
 
+    paladin_commander = ::BgPerks.chances.paladin
 }
 
 foreach (key, value in chances) {
