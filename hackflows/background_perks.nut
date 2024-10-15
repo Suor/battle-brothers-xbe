@@ -256,30 +256,8 @@ local chances = {
     }
 }
 
+}
 
 foreach (key, value in chances) {
     ::BgPerks.chances["hackflows_" + key] <- value;
-}
-
-// Chosen scenario
-::BgPerks.chances.chosen <- {
-    "berserk": 10
-    "killing_frenzy": 20
-    "adrenaline": 10
-    "colossus": 7
-    "mastery.cleaver": 5
-    "lone_wolf": 5
-    "hackflows.full_force": 7
-}
-::BgPerks.chances.aspirant <- {
-    "berserk": 5
-    "killing_frenzy": 10
-    "adrenaline": 10
-    "colossus": 7
-    "hold_out": 5
-}
-::BgPerks.chances.shaman <- {
-    "fortified_mind": 33
-    "gifted": 33
-    "fearsome": 20
 }
