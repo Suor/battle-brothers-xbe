@@ -1,0 +1,14 @@
+0.6
+- add back Champion of Fate origin with special paladin and his legendary stuff
+- made Gae Buidhe Legendary
+- some cleanup
+
+0.5 (changes from the base mod)
+- use modhooks, so it's compatible with newer Battle Brothers and other mods
+- balance background attributes, excluded traits, costs, starting perks
+- split Starting Perks by Background into a separate mod
+- use Hackflow's Perks in above too
+- drop Standout attributes system
+- fix some texts
+- fix some events, or disable some too broken
+- fix draftlists here and thre

@@ -1,7 +1,7 @@
 local mod = ::XBE <- {
     ID = "mod_backgrounds_and_events"
     Name = "More Backgrounds and Events"
-    Version = 0.5
+    Version = 0.6
     Data = {}
 };
 ::mods_registerMod(mod.ID, mod.Version, mod.Name);

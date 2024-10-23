@@ -6,9 +6,9 @@ This is a content mod for Battle Brothers that seeks to make events and hiring b
 
 Features:
 
-- 35 new backgrounds to hire
-- 53 new events
-- 3 new custom starts
+- 36 new backgrounds to hire
+- 54 new events
+- 4 new custom starts
 - 2 new legendary weapons with custom art
 - a couple of new mechanics to make hiring more interesting and finding standout brothers of all backgrounds more viable (via separate mods, see below)
 
