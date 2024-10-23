@@ -23,6 +23,7 @@ this.gae_buidhe <- this.inherit("scripts/items/weapons/weapon", {
 		this.m.RegularDamageMax = 60;
 		this.m.ArmorDamageMult = 0.85;
 		this.m.DirectDamageMult = 0.25;
+		this.m.ItemType = this.m.ItemType | this.Const.Items.ItemType.Legendary;
 	}
 
 	function getTooltip()
