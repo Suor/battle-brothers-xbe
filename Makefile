@@ -1,12 +1,12 @@
 MOD_NAME = backgrounds_and_events
-TAG_NAME = xbe
+TAG_NAME =''
 SOURCES = hackflows scripts gfx brushes
 DATA_DIR = ~/.local/share/Steam/steamapps/common/Battle\ Brothers/data/
 
 SHELL := /bin/bash
 
 .ONESHELL:
-test: genfiles
+test: genfiles check-compile
 	@squirrel tests/run.nut
 
 zip: check-compile
@@ -14,8 +14,7 @@ zip: check-compile
 	LAST_TAG=$$(git tag | grep $(TAG_NAME) | tail -1);
 	echo $$LAST_TAG;
 	MODIFIED=$$( git diff $$LAST_TAG --quiet $(SOURCES) || echo _MODIFIED);
-	NAME=$$(echo $$LAST_TAG | perl -pE 's/^$(TAG_NAME)-/$(MOD_NAME)_/');
-	FILENAME=mod_$$([[ "$$NAME" != "" ]] && echo $$NAME || echo $(MOD_NAME))$${MODIFIED}.zip;
+	FILENAME=mod_$(MOD_NAME)_$${LAST_TAG}$${MODIFIED}.zip;
 	zip --filesync -r "$${FILENAME}" $(SOURCES);
 
 clean:
