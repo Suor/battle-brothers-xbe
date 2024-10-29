@@ -13,6 +13,8 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     ::include("hackflows/background_perks");
     ::logInfo("xbe: LOADED");
 
+    ::include("hackflows/rosetta_ru");
+
     // // Debug draft lists
     // ::mods_hookChildren("scenarios/world/starting_scenario", function (cls) {
     //     local original = "onUpdateDraftList" in cls ? cls.onUpdateDraftList : null;

@@ -60,7 +60,7 @@ this.bodyguard_background <- this.inherit("scripts/skills/backgrounds/character_
 			"the Guard",
 			"the Watchdog",
 			"the Sentry",
-			"the Invinicble",
+			"the Invincible",
 			"the Impenetrable",
 			"the Steadfast",
 			"the Stalwart",
