@@ -26,7 +26,7 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     // })
 
     // Show enemies immediately after game load.
-    // Contributed by TaroEld, refined by Enduriel.
+    // Contributed by Darxo, refined by Enduriel.
     ::mods_hookExactClass("states/world_state", function (cls) {
         local onShow = cls.onShow;
         cls.onShow = function() {
