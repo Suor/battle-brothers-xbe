@@ -9,7 +9,7 @@ Features:
 - 36 new backgrounds to hire
 - 54 new events
 - 4 new custom starts
-- 2 new legendary weapons with custom art
+- 4 new legendary items with custom art
 - a couple of new mechanics to make hiring more interesting and finding standout brothers of all backgrounds more viable (via separate mods, see below)
 
 To put it simply the goal of this mod is to break Cripple to Brawler to whatever to Hedge Knight progression, which eventually boils down to rounding out the roster with characters from a select few backgrounds. Apart from adding to a sheer variety I suggest several strategies implemented as mods:
