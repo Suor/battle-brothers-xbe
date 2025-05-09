@@ -39,7 +39,7 @@ this.gardener_provides_mysterious_herbs_event <- this.inherit("scripts/events/ev
 				}
 
 				this.World.Assets.addMedicine(6);
-				this.result.push({
+				this.List.push({
 					id = 10,
 					icon = "ui/icons/asset_medicine.png",
 					text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + 6 + "[/color] Medical Supplies."
