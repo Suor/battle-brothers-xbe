@@ -222,9 +222,9 @@ local chances = {
     }
 
     roofer = {
-        "recover": 20
-        "brawny": 20
+        "hackflows.balance": 33
         "footwork": 20
+        "recover": 10
     }
 
     skirmisher = {
