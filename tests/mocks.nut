@@ -25,7 +25,7 @@
     }
 }
 ::include <- function (script) {
-    return dofile(script + ".nut")
+    return dofile(script + ".nut", true)
 }
 ::new <- function (script) {
     return dofile(script + ".nut")
