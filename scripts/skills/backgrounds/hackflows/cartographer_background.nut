@@ -19,16 +19,13 @@ this.cartographer_background <- this.inherit("scripts/skills/backgrounds/charact
 			"trait.dexterous",
 			"trait.dumb",
 			"trait.hate_beasts",
-			"trait.huge",
 			"trait.impatient",
 			"trait.iron_jaw",
 			"trait.iron_lungs",
 			"trait.irrational",
-			"trait.paranoid",
 			"trait.spartan",
 			"trait.strong",
 			"trait.superstitious",
-			"trait.sure_footing",
 			"trait.tough"
 		];
 		this.m.Titles = [

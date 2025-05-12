@@ -12,23 +12,13 @@ this.cobbler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.HiringCost = 70;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [
-			"trait.athletic",
 			"trait.bloodthirsty",
 			"trait.brute",
 			"trait.cocky",
-			"trait.dumb",
+			"trait.clumsy",
 			"trait.hate_beasts",
 			"trait.huge",
 			"trait.impatient",
-			"trait.iron_jaw",
-			"trait.iron_lungs",
-			"trait.irrational",
-			"trait.paranoid",
-			"trait.spartan",
-			"trait.strong",
-			"trait.superstitious",
-			"trait.sure_footing",
-			"trait.tough"
 		];
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.Bravery

@@ -16,22 +16,15 @@ this.barkeep_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		// TODO: add a MoreLikely list :) How it will work though? Add on top?
 		this.m.Excluded = [
 			"trait.ailing",
-			"trait.asthmatic",
-			"trait.bleeder",
 			"trait.clubfooted",
 			"trait.clumsy",
-			"trait.craven",
-			"trait.dastard",
-			"trait.drunkard",
-			"trait.fainthearted",
-			"trait.fat",
-			"trait.fear_undead",
-			"trait.fragile",
-			"trait.hate_undead",
-			"trait.insecure",
-			"trait.irrational",
-			"trait.tiny",
-			"trait.weasel"
+			"trait.cocky",
+			"trait.bloodthirsty",
+			"trait.spartan",
+			"trait.brute",
+			"trait.optimist",
+			"trait.deathwish",
+			"trait.hesitant",
 		];
 		this.m.Titles = [
 			"the Bartender",

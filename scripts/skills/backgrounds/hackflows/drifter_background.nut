@@ -19,19 +19,11 @@ this.drifter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.brute",
 			"trait.clubfooted",
 			"trait.clumsy",
-			"trait.dastard",
-			"trait.drunkard",
 			"trait.fat",
 			"trait.gluttonous",
-			"trait.hate_beasts",
-			"trait.hate_undead",
 			"trait.hesitant",
-			"trait.huge",
-			"trait.insecure",
 			"trait.iron_jaw",
 			"trait.short_sighted",
-			"trait.strong",
-			"trait.tiny"
 		];
 		this.m.Titles = [
 			"the Drifter",
