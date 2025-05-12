@@ -84,7 +84,7 @@ this.hangman_hangs_wiederganger_event <- this.inherit("scripts/events/event", {
 
 			if (b.getBackground().getID() == "background.hackflows_hangman")
 			{
-				this.candidates_town_watchman.push(b);
+				candidates_hangman.push(b);
 			}
 			else
 			{
