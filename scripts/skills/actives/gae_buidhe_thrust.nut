@@ -53,7 +53,14 @@ this.gae_buidhe_thrust <- this.inherit("scripts/skills/skill", {
 
 	function onAfterUpdate( _properties )
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInSpears ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		if (::mods_getRegisteredMod("mod_msu")) {
+			if (_properties.IsSpecializedInSpears) {
+				this.m.FatigueCostMult *= ::Const.Combat.WeaponSpecFatigueMult;
+			}
+		} else {
+			this.m.FatigueCostMult = _properties.IsSpecializedInSpears
+				? ::Const.Combat.WeaponSpecFatigueMult : 1.0;
+		}
 	}
 
 	function onUse( _user, _targetTile )

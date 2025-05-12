@@ -61,13 +61,29 @@ this.excalibur_split <- this.inherit("scripts/skills/skill", {
 				text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-5%[/color] chance to hit"
 			});
 		}
+		else
+		{
+			ret.push({
+				id = 6,
+				type = "text",
+				icon = "ui/icons/hitchance.png",
+				text = "Has [color=" + this.Const.UI.Color.PositiveValue + "]+5%[/color] chance to hit"
+			});
+		}
 
 		return ret;
 	}
 
 	function onAfterUpdate( _properties )
 	{
-		this.m.FatigueCostMult = _properties.IsSpecializedInSwords ? this.Const.Combat.WeaponSpecFatigueMult : 1.0;
+		if (::mods_getRegisteredMod("mod_msu")) {
+			if (_properties.IsSpecializedInSwords) {
+				this.m.FatigueCostMult *= ::Const.Combat.WeaponSpecFatigueMult;
+			}
+		} else {
+			this.m.FatigueCostMult = _properties.IsSpecializedInSwords
+				? ::Const.Combat.WeaponSpecFatigueMult : 1.0;
+		}
 	}
 
 	function onUse( _user, _targetTile )
@@ -140,6 +156,10 @@ this.excalibur_split <- this.inherit("scripts/skills/skill", {
 			if (!this.getContainer().getActor().getCurrentProperties().IsSpecializedInSwords)
 			{
 				_properties.MeleeSkill -= 5;
+			}
+			else
+			{
+				_properties.MeleeSkill += 5;
 			}
 		}
 	}
