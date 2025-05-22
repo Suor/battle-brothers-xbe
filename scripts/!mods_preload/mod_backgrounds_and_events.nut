@@ -7,6 +7,7 @@ local mod = ::XBE <- {
 ::mods_registerMod(mod.ID, mod.Version, mod.Name);
 
 foreach (file in ::IO.enumerateFiles("hackflows/const/")) ::include(file);
+foreach (file in ::IO.enumerateFiles("hackflows/hooks/")) ::include(file);
 foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
 
 ::mods_queue(mod.ID, ">mod_background_perks", function () {
