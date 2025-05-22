@@ -30,7 +30,7 @@ this.leper_becomes_famous_event <- this.inherit("scripts/events/event", {
 				_event.m.Leper.improveMood(1.5, "Realized that he has become famous across the land");
 				this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 				_event.m.Leper.getBaseProperties().Bravery += 20;
-				_event.m.Leper.getBaseProperties().HitPoints += 10;
+				_event.m.Leper.getBaseProperties().Hitpoints += 10;
 				_event.m.Leper.getBaseProperties().Stamina += 4;
 				_event.m.Leper.getBaseProperties().MeleeDefense += 4;
 				this.List.push({
