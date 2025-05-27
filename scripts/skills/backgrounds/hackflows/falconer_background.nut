@@ -12,22 +12,16 @@ this.falconer_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.HiringCost = 50;
 		this.m.DailyCost = 14;
 		this.m.Excluded = [
-			"trait.weasel",
-			"trait.fear_undead",
 			"trait.fear_beasts",
 			"trait.hate_beasts",
 			"trait.night_blind",
 			"trait.clubfooted",
 			"trait.dumb",
-			"trait.brute",
 			"trait.short_sighted",
-			"trait.fat",
 			"trait.clumsy",
 			"trait.gluttonous",
-			"trait.asthmatic",
 			"trait.craven",
 			"trait.dastard",
-			"trait.drunkard"
 		];
 		this.m.Titles = [
 			"the Falconer",
