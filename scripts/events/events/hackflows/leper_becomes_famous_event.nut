@@ -121,7 +121,7 @@ this.leper_becomes_famous_event <- this.inherit("scripts/events/event", {
 		}
 
 		this.m.Leper = candidates[this.Math.rand(0, candidates.len() - 1)];
-		this.m.Score = 2000 * candidates.len();
+		this.m.Score = 20 * candidates.len();
 	}
 
 	function onPrepare()

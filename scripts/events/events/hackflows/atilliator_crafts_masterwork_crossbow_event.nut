@@ -127,7 +127,7 @@ this.atilliator_crafts_masterwork_crossbow_event <- this.inherit("scripts/events
 		}
 
 		this.m.Atilliator = candidates[this.Math.rand(0, candidates.len() - 1)];
-		this.m.Score = candidates.len() * 300;
+		this.m.Score = candidates.len() * 30;
 	}
 
 	function onPrepare()
