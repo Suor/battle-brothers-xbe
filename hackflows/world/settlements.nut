@@ -566,7 +566,7 @@ local towns = ::XBE.Data.SettlementDrafts <- {
             create();
             this.m.DraftList.extend(backgrounds);
             // This means smaller villages with shorter lists will have higher chance
-            if (Math.rand(1, 3) >= 2) this.m.DraftList.push("hackflows/folk_hero_background");
+            if (Math.rand(1, 100) <= 35) this.m.DraftList.push("hackflows/folk_hero_background");
         }
     })
 })
