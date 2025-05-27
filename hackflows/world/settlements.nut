@@ -484,6 +484,7 @@ local towns = ::XBE.Data.SettlementDrafts <- {
         "hackflows/dissenter_background"
         "hackflows/fletcher_background"
         "hackflows/druid_background"
+        "hackflows/falconer_background"
         "hackflows/town_watchman_background"
     ]
     small_lumber_village = [

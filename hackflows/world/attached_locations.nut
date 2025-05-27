@@ -62,7 +62,7 @@ local locations = ::XBE.Data.AttachedLocationDrafts <- {
     peat_pit_location = ["hackflows/roofer_background"]
     pig_farm_location = ["hackflows/cook_background"]
     plantation_location = []
-    salt_min_location = []
+    salt_mine_location = []
     silk_farm_location = []
     stone_watchtower_location = ["hackflows/arbalester_background"]
     stone_watchtower_oriental_location = []
@@ -74,6 +74,7 @@ local locations = ::XBE.Data.AttachedLocationDrafts <- {
     wooden_watchtower_location = [
         "hackflows/skirmisher_background"
         "hackflows/town_watchman_background"
+        "hackflows/falconer_background"
     ]
     wool_spinner_location = []
     workshop_location = [
