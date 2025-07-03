@@ -33,7 +33,6 @@ this.champion_background <- this.inherit("scripts/skills/backgrounds/character_b
 			"trait.hesitant",
 			"trait.insecure",
 			"trait.paranoid",
-			"trait.pessimist",
 			"trait.quick",
 			"trait.tiny",
 			"trait.weasel"

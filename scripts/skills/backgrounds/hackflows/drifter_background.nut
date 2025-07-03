@@ -23,7 +23,6 @@ this.drifter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.gluttonous",
 			"trait.hesitant",
 			"trait.iron_jaw",
-			"trait.short_sighted",
 		];
 		this.m.Titles = [
 			"the Drifter",
