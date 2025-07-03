@@ -93,7 +93,7 @@ this.hangman_vs_criminal_event <- this.inherit("scripts/events/event", {
 
 			if (b.getBackground().getID() == "background.hackflows_hangman")
 			{
-				this.candidates_town_watchman.push(b);
+				candidates_hangman.push(b);
 			}
 			else if (b.getBackground().getID() == "background.killer_on_the_run" || b.getBackground().getID() == "background.graverobber" || b.getBackground().getID() == "background.thief" || b.getBackground().getID() == "background.hackflows_myrmidon" || b.getBackground().getID() == "background.deserter" || b.getBackground().getID() == "background.poacher" || b.getBackground().getID() == "background.hackflows_con_artist" || b.getBackground().getID() == "background.hackflows_dissenter" || b.getBackground().getID() == "background.hackflows_pirate" || b.getBackground().getID() == "background.raider")
 			{
