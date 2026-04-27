@@ -7,6 +7,19 @@ local rosetta = {
     lang = "ru"
 }
 local pairs = [
+    // FILE: scripts/scenarios/world/hackflows/treasure_hunters_scenario.nut
+    {
+        en = "the Brain"
+        ru = "Мозг"
+    }
+    {
+        en = "the Eyes"
+        ru = "Глаза"
+    }
+    {
+        en = "the Heart"
+        ru = "Сердце"
+    }
     // FILE: scripts/skills/backgrounds/hackflows/arbalester_background.nut
     {
         en = "Arbalester"
