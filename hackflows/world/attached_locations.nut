@@ -26,7 +26,10 @@ local locations = ::XBE.Data.AttachedLocationDrafts <- {
         "hackflows/bodyguard_background"
         "hackflows/skirmisher_background"
     ]
-    gatherers_hut_location = []
+    gatherers_hut_location = [
+        "hackflows/druid_background"
+        "hackflows/herbalist_background"
+    ]
     gem_mine_location = ["hackflows/con_artist_background"]
     goat_herd_location = ["hackflows/cook_background"]
     goat_herd_oriental_location = []
@@ -39,6 +42,7 @@ local locations = ::XBE.Data.AttachedLocationDrafts <- {
     ]
     harbor_location = [] // pirate ???
     herbalists_grove_location = [
+        "hackflows/druid_background"
         "hackflows/gardener_background"
         "hackflows/herbalist_background"
         "hackflows/herbalist_background"
