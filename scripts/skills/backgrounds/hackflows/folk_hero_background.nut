@@ -27,7 +27,6 @@ this.folk_hero_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.hesitant",
 			"trait.insecure",
 			"trait.irrational",
-			"trait.quick",
 			"trait.tiny",
 			"trait.weasel"
 		];

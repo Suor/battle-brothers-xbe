@@ -13,23 +13,13 @@ this.hangman_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.DailyCost = 7;
 		this.m.Excluded = [
 			"trait.ailing",
-			"trait.athletic",
-			"trait.bright",
-			"trait.deathwish",
 			"trait.drunkard",
 			"trait.fragile",
-			"trait.gluttonous",
 			"trait.hate_undead",
 			"trait.impatient",
 			"trait.insecure",
 			"trait.loyal",
-			"trait.lucky",
-			"trait.optimist",
-			"trait.quick",
 			"trait.short_sighted",
-			"trait.spartan",
-			"trait.swift",
-			"trait.tough",
 			"trait.weasel"
 		];
 		this.m.Titles = [

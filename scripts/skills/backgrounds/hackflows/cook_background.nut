@@ -12,27 +12,11 @@ this.cook_background <- this.inherit("scripts/skills/backgrounds/character_backg
 		this.m.HiringCost = 150;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [
-			"trait.ailing",
-			"trait.athletic",
 			"trait.bleeder",
-			"trait.bloodthirsty",
-			"trait.brave",
-			"trait.brute",
-			"trait.clubfooted",
 			"trait.clumsy",
 			"trait.cocky",
-			"trait.deathwish",
-			"trait.disloyal",
-			"trait.eagle_eyes",
-			"trait.greedy",
-			"trait.hate_beasts",
 			"trait.impatient",
-			"trait.quick",
 			"trait.spartan",
-			"trait.strong",
-			"trait.survivor",
-			"trait.swift",
-			"trait.tiny"
 		];
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.Fatigue

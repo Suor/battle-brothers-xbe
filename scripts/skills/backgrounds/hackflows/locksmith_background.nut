@@ -26,7 +26,6 @@ this.locksmith_background <- this.inherit("scripts/skills/backgrounds/character_
 			"trait.insecure",
 			"trait.loyal",
 			"trait.night_blind",
-			"trait.paranoid",
 			"trait.short_sighted",
 			"trait.strong",
 			"trait.teamplayer"

@@ -12,33 +12,21 @@ this.lancer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 22;
 		this.m.Excluded = [
+			"trait.fear_beasts",
+			"trait.fear_greenskins",
+			"trait.fear_undead",
 			"trait.ailing",
 			"trait.asthmatic",
 			"trait.bleeder",
-			"trait.brute",
 			"trait.clubfooted",
 			"trait.clumsy",
 			"trait.craven",
 			"trait.dastard",
-			"trait.drunkard",
-			"trait.dumb",
-			"trait.fat",
-			"trait.fear_beasts",
-			"trait.fear_greenskins",
-			"trait.fear_undead",
 			"trait.fragile",
-			"trait.gluttonous",
 			"trait.hesitant",
-			"trait.huge",
 			"trait.impatient",
 			"trait.insecure",
 			"trait.irrational",
-			"trait.night_blind",
-			"trait.paranoid",
-			"trait.pessimist",
-			"trait.short_sighted",
-			"trait.superstitious",
-			"trait.tiny"
 		];
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.RangedSkill,

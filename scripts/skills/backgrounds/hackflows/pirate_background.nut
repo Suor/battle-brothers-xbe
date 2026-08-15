@@ -12,17 +12,8 @@ this.pirate_background <- this.inherit("scripts/skills/backgrounds/character_bac
 		this.m.HiringCost = 10;
 		this.m.DailyCost = 21;
 		this.m.Excluded = [
-			"trait.weasel",
-			"trait.hate_undead",
-			"trait.night_blind",
-			"trait.ailing",
 			"trait.asthmatic",
-			"trait.clubfooted",
-			"trait.hesitant",
 			"trait.loyal",
-			"trait.tiny",
-			"trait.fragile",
-			"trait.clumsy",
 			"trait.fainthearted",
 			"trait.craven",
 			"trait.bleeder",

@@ -15,7 +15,6 @@ this.roofer_background <- this.inherit("scripts/skills/backgrounds/character_bac
 			"trait.ailing",
 			"trait.asthmatic",
 			"trait.bleeder",
-			"trait.bright",
 			"trait.clubfooted",
 			"trait.clumsy",
 			"trait.craven",

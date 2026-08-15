@@ -19,7 +19,6 @@ this.falconer_background <- this.inherit("scripts/skills/backgrounds/character_b
 			"trait.dumb",
 			"trait.short_sighted",
 			"trait.clumsy",
-			"trait.gluttonous",
 			"trait.craven",
 			"trait.dastard",
 		];

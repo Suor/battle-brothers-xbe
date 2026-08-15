@@ -12,17 +12,9 @@ this.fletcher_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.HiringCost = 150;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [
-			"trait.fear_undead",
 			"trait.hate_undead",
-			"trait.iron_jaw",
-			"trait.athletic",
 			"trait.clumsy",
 			"trait.short_sighted",
-			"trait.fearless",
-			"trait.brave",
-			"trait.iron_lungs",
-			"trait.strong",
-			"trait.tough",
 			"trait.cocky",
 			"trait.dumb",
 			"trait.brute",

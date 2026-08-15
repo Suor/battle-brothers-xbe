@@ -16,20 +16,12 @@ this.blacksmith_background <- this.inherit("scripts/skills/backgrounds/character
 			"trait.asthmatic",
 			"trait.bleeder",
 			"trait.clumsy",
-			"trait.craven",
-			"trait.dastard",
 			"trait.dumb",
 			"trait.fainthearted",
-			"trait.fear_beasts",
-			"trait.fear_greenskins",
-			"trait.fear_undead",
 			"trait.fragile",
 			"trait.hesitant",
-			"trait.insecure",
 			"trait.irrational",
-			"trait.swift",
 			"trait.tiny",
-			"trait.weasel"
 		];
 		this.m.Titles = [
 			"the Smith",

@@ -12,12 +12,10 @@ this.gardener_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.HiringCost = 80;
 		this.m.DailyCost = 9;
 		this.m.Excluded = [
-			"trait.fear_undead",
 			"trait.hate_undead",
 			"trait.dumb",
 			"trait.clumsy",
 			"trait.asthmatic",
-			"trait.athletic",
 			"trait.brute",
 			"trait.bloodthirsty",
 			"trait.ailing"

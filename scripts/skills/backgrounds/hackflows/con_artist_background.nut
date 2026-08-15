@@ -12,30 +12,15 @@ this.con_artist_background <- this.inherit("scripts/skills/backgrounds/character
 		this.m.HiringCost = 90;
 		this.m.DailyCost = 6;
 		this.m.Excluded = [
-			"trait.asthmatic",
-			"trait.bloodthirsty",
 			"trait.brute",
 			"trait.clubfooted",
 			"trait.clumsy",
-			"trait.craven",
-			"trait.dastard",
-			"trait.drunkard",
 			"trait.dumb",
-			"trait.fainthearted",
-			"trait.hate_beasts",
-			"trait.hate_greenskins",
-			"trait.hate_undead",
 			"trait.hesitant",
-			"trait.huge",
 			"trait.insecure",
 			"trait.loyal",
-			"trait.night_blind",
-			"trait.short_sighted",
 			"trait.spartan",
-			"trait.strong",
 			"trait.teamplayer",
-			"trait.tiny",
-			"trait.tough"
 		];
 		this.m.Titles = [
 			"the Con Artist",

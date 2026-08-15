@@ -12,38 +12,11 @@ this.dissenter_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.HiringCost = 80;
 		this.m.DailyCost = 5;
 		this.m.Excluded = [
-			"trait.ailing",
 			"trait.asthmatic",
-			"trait.athletic",
-			"trait.bloodthirsty",
 			"trait.brute",
-			"trait.clubfooted",
 			"trait.clumsy",
-			"trait.craven",
-			"trait.dastard",
-			"trait.dexterous",
-			"trait.disloyal",
-			"trait.drunkard",
-			"trait.fainthearted",
-			"trait.fat",
-			"trait.fear_beasts",
-			"trait.fear_greenskins",
-			"trait.fear_undead",
-			"trait.gluttonous",
-			"trait.greedy",
-			"trait.hate_beasts",
-			"trait.hate_greenskins",
-			"trait.hate_undead",
-			"trait.hesitant",
-			"trait.huge",
-			"trait.insecure",
-			"trait.iron_jaw",
 			"trait.optimist",
-			"trait.pessimist",
-			"trait.strong",
-			"trait.survivor",
 			"trait.teamplayer",
-			"trait.weasel"
 		];
 		this.m.Titles = [
 			"the Dissenter",

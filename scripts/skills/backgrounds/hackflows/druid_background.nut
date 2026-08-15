@@ -14,22 +14,20 @@ this.druid_background <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.HiringCost = 330;
 		this.m.DailyCost = 9;
 		this.m.Excluded = [
-			"trait.ailing",
-			"trait.asthmatic",
-			"trait.bleeder",
-			"trait.brute",
-			"trait.cocky",
-			"trait.craven",
-			"trait.dumb",
-			"trait.fat",
-			"trait.fear_beasts",
-			"trait.gluttonous",
-			"trait.greedy",
-			"trait.hate_beasts",
-			"trait.night_blind",
-			"trait.short_sighted",
-			"trait.teamplayer",
+			"trait.brute"
+			"trait.clubfooted"
+			"trait.cocky"
+			"trait.dumb"
+			"trait.fat"
+			"trait.gluttonous"
+			"trait.greedy"
+			"trait.hate_beasts"
 			"trait.impatient"
+			"trait.insecure"
+			"trait.night_blind",
+			"trait.short_sighted"
+			"trait.superstitious"
+			"trait.teamplayer"
 		];
 		this.m.Titles = [
 			"the Druid",

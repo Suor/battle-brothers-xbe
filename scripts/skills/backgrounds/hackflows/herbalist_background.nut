@@ -12,12 +12,10 @@ this.herbalist_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.HiringCost = 90;
 		this.m.DailyCost = 7;
 		this.m.Excluded = [
-			"trait.fear_undead",
 			"trait.hate_undead",
 			"trait.dumb",
 			"trait.clumsy",
 			"trait.asthmatic",
-			"trait.athletic",
 			"trait.brute",
 			"trait.bloodthirsty",
 			"trait.ailing"

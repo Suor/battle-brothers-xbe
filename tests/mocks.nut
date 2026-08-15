@@ -89,30 +89,39 @@ World <- {
 createColor <- function (color) {return color}
 
 // Mod hooks mock
+
+// A class stand-in that tolerates reading or assigning any method, so hooks
+// that wrap an existing method (e.g. `local f = cls.onUse`) don't blow up.
+::mockClass <- function () {
+    local cls = {};
+    cls.setdelegate({
+        _get = function (key) {return function (...) {return null}}
+        _set = function (key, val) {this.rawset(key, val)}
+    });
+    return cls;
+}
 ::mods_registerMod <- function (x, y, x) {}
 ::mods_getRegisteredMod <- function (name) {return false}
 ::mods_queue <- function (x, y, func) {
     func()
 }
 ::mods_hookClass <- function (x, func) {
-    func({});
+    func(::mockClass());
 }
 ::mods_hookExactClass <- function (x, func) {
-    func({
-        onShow = @() null
-    })
+    func(::mockClass())
 }
 ::mods_hookChildren <- function (x, func) {
-    func({})
+    func(::mockClass())
 }
 ::mods_hookBaseClass <- function (x, func) {
-    func({})
+    func(::mockClass())
 }
 ::mods_hookDescendants <- function (x, func) {
-    func({})
+    func(::mockClass())
 }
 ::mods_hookNewObject <- function (x, func) {
-    func({})
+    func(::mockClass())
 }
 ::mods_addHook <- function(name, func) {
     func("some/parent", "some/parent/child", {})

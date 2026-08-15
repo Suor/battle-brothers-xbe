@@ -12,21 +12,13 @@ this.cartographer_background <- this.inherit("scripts/skills/backgrounds/charact
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [
-			"trait.athletic",
 			"trait.bloodthirsty",
 			"trait.brute",
 			"trait.cocky",
-			"trait.dexterous",
 			"trait.dumb",
 			"trait.hate_beasts",
 			"trait.impatient",
-			"trait.iron_jaw",
-			"trait.iron_lungs",
 			"trait.irrational",
-			"trait.spartan",
-			"trait.strong",
-			"trait.superstitious",
-			"trait.tough"
 		];
 		this.m.Titles = [
 			"the Studious",

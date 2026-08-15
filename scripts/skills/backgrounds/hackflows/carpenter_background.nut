@@ -12,20 +12,9 @@ this.carpenter_background <- this.inherit("scripts/skills/backgrounds/character_
 		this.m.HiringCost = 70;
 		this.m.DailyCost = 7;
 		this.m.Excluded = [
-			"trait.ailing",
-			"trait.asthmatic",
-			"trait.bleeder",
-			"trait.bright",
-			"trait.clubfooted",
+			"trait.brute",
 			"trait.clumsy",
-			"trait.craven",
-			"trait.fainthearted",
-			"trait.fat",
-			"trait.fragile",
-			"trait.hate_undead",
-			"trait.night_blind",
 			"trait.tiny",
-			"trait.weasel"
 		];
 		this.m.Titles = [
 			"the Craftsman",

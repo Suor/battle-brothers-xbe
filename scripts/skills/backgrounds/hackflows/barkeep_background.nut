@@ -22,8 +22,6 @@ this.barkeep_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.bloodthirsty",
 			"trait.spartan",
 			"trait.brute",
-			"trait.optimist",
-			"trait.deathwish",
 			"trait.hesitant",
 		];
 		this.m.Titles = [

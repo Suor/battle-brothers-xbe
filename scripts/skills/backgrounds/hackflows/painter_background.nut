@@ -16,7 +16,6 @@ this.painter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.bloodthirsty",
 			"trait.brute",
 			"trait.cocky",
-			"trait.dexterous",
 			"trait.dumb",
 			"trait.hate_beasts",
 			"trait.huge",
@@ -24,10 +23,7 @@ this.painter_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.iron_jaw",
 			"trait.iron_lungs",
 			"trait.irrational",
-			"trait.paranoid",
-			"trait.spartan",
 			"trait.strong",
-			"trait.superstitious",
 			"trait.sure_footing",
 			"trait.tough"
 		];

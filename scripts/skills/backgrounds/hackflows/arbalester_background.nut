@@ -12,27 +12,9 @@ this.arbalester_background <- this.inherit("scripts/skills/backgrounds/character
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 20;
 		this.m.Excluded = [
-			"trait.bloodthirsty",
-			"trait.brute",
-			"trait.clubfooted",
-			"trait.clumsy",
-			"trait.determined",
-			"trait.drunkard",
-			"trait.dumb",
-			"trait.fearless",
-			"trait.fragile",
-			"trait.gluttonous",
-			"trait.hate_undead",
-			"trait.huge",
 			"trait.impatient",
-			"trait.insecure",
-			"trait.iron_jaw",
-			"trait.irrational",
 			"trait.night_blind",
-			"trait.quick",
 			"trait.short_sighted",
-			"trait.strong",
-			"trait.weasel"
 		];
 		this.m.ExcludedTalents = [
 			this.Const.Attributes.MeleeSkill,

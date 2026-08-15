@@ -12,13 +12,8 @@ this.leper_background <- this.inherit("scripts/skills/backgrounds/character_back
 		this.m.HiringCost = 30;
 		this.m.DailyCost = 3;
 		this.m.Excluded = [
-			"trait.athletic",
-			"trait.dexterous",
 			"trait.disloyal",
-			"trait.eagle_eyes",
 			"trait.fat",
-			"trait.gluttonous",
-			"trait.greedy",
 			"trait.impatient",
 			"trait.iron_lungs",
 		];

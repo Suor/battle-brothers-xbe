@@ -12,28 +12,22 @@ this.champion_background <- this.inherit("scripts/skills/backgrounds/character_b
 		this.m.HiringCost = 4000;
 		this.m.DailyCost = 45;
 		this.m.Excluded = [
+			"trait.fear_beasts",
+			"trait.fear_greenskins",
+			"trait.fear_undead",
 			"trait.ailing",
 			"trait.asthmatic",
 			"trait.bleeder",
-			"trait.bright",
 			"trait.clubfooted",
 			"trait.clumsy",
 			"trait.craven",
 			"trait.dastard",
 			"trait.disloyal",
-			"trait.drunkard",
-			"trait.dumb",
 			"trait.fainthearted",
 			"trait.fat",
-			"trait.fear_beasts",
-			"trait.fear_greenskins",
-			"trait.fear_undead",
 			"trait.fragile",
-			"trait.gluttonous",
 			"trait.hesitant",
 			"trait.insecure",
-			"trait.paranoid",
-			"trait.quick",
 			"trait.tiny",
 			"trait.weasel"
 		];

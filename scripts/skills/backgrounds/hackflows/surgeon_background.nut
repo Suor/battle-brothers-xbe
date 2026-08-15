@@ -12,15 +12,10 @@ this.surgeon_background <- this.inherit("scripts/skills/backgrounds/character_ba
 		this.m.HiringCost = 100;
 		this.m.DailyCost = 8;
 		this.m.Excluded = [
-			"trait.iron_jaw",
-			"trait.tough",
-			"trait.strong",
 			"trait.cocky",
 			"trait.brute",
 			"trait.clumsy",
 			"trait.fat",
-			"trait.deathwish",
-			"trait.athletic"
 		];
 		this.m.Titles = [
 			"the Surgeon",

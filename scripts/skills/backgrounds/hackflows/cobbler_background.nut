@@ -16,8 +16,6 @@ this.cobbler_background <- this.inherit("scripts/skills/backgrounds/character_ba
 			"trait.brute",
 			"trait.cocky",
 			"trait.clumsy",
-			"trait.hate_beasts",
-			"trait.huge",
 			"trait.impatient",
 		];
 		this.m.ExcludedTalents = [
