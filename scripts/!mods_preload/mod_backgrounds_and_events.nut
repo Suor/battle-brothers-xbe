@@ -38,7 +38,7 @@ foreach (file in ::IO.enumerateFiles("hackflows/world/")) ::include(file);
     })
 })
 
-::mods_queue(mod.ID, ">msu", function () {
+::mods_queue(mod.ID, ">mod_msu", function () {
      if (!("MSU" in getroottable())) return;
     ::include("hackflows/hack_msu");
     ::HackMSU.setup(mod, {
